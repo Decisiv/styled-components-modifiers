@@ -1,8 +1,26 @@
 # Styled Components Modifiers
 
+[![CircleCI](https://img.shields.io/circleci/project/github/Decisiv/styled-components-modifiers.svg)]()
+
 Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out [Block, Element, Modifier (BEM) conventions](http://getbem.com).
 
 This library enhances [`styled-components`](https://www.styled-components.com/) by allowing you to use BEM-flavored conventions when building your components.
+
+## Installation
+
+This package is available on npm as `styled-components-modifiers`, and you can find it [here](https://www.npmjs.com/package/styled-components-modifiers).
+
+To install the latest stable version with `yarn`:
+
+```sh
+$ yarn add styled-components-modifiers
+```
+
+...or with 'npm':
+
+```sh
+$ npm install styled-components-modifiers --save
+```
 
 ## Blocks and Elements
 
