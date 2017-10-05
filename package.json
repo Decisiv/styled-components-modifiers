@@ -25,7 +25,6 @@
     "build:clean": "rimraf ./dist",
     "lint": "eslint lib/**; exit 0",
     "prebuild": "npm run build:clean && npm run lint && npm run test",
-    "prepublish": "npm run build",
     "review": "npm run lint && npm test",
     "test": "jest",
     "test:coverage:report": "opn coverage/lcov-report/index.html",

@@ -83,8 +83,6 @@ const MODIFIER_CONFIG = {
     `,
   }),
 
-  // Prefer standardizing values like sizes or colors in your theme,
-  // and defining modifiers based on theme values and plain CSS only.
   warning: ({ theme }) => `
     background-color: ${theme.colors.warning};
   `,
@@ -103,7 +101,7 @@ import styled from 'styled-components';
 import { applyStyleModifiers } from 'styled-components-modifiers';
 
 const Button = styled.button`
-  // Any styles that won't change or may be over-ruled can go above where you
+  // Any styles that won't change or may be overruled can go above where you
   // apply the style modifiers. In BEM, these would be the styles you apply in
   // either the Block or Element class's primary definition
   font-size: 24px;
@@ -120,7 +118,7 @@ The end result is a block (`Button`) with four available modifiers (`disabled`, 
 
 ## Applying Modifiers
 
-Applying modifiers when rendering the component is as simple as providing a `modifiers` prop. The prop should be an array of strings that must match the keys in the modifier configuration object applied to the component.
+Applying modifiers when rendering the component is as simple as providing a `modifiers` prop. The prop should be an array of strings that correspond to keys in the modifier configuration object applied to the component.
 
 ```jsx
 function Form() {
