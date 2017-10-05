@@ -210,8 +210,8 @@ The same can be done when you `applyResponsiveStyleModifiers`.
 
 ## Contributing
 
-We are thankful for any contributions made by the community. By contributing you agree to abide by the Code of Conduct in our [Contributing Guidelines](.github/CONTRIBUTING.md).
+We are thankful for any contributions made by the community. By contributing you agree to abide by the Code of Conduct in our [Contributing Guidelines](https://github.com/Decisiv/styled-components-modifiers/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/Decisiv/styled-components-modifiers/blob/master/LICENSE)
