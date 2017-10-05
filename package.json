@@ -48,7 +48,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^8.0.1",
-    "babel-preset-latest": "^6.24.0",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.0.5",
     "eslint": "^4.8.0",
