@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "globals": {
+    "test": true,
+    "expect": true,
+    "jest": true,
+  },
+  "rules": {
+    "arrow-parens": [
+      0
+    ],
+    "no-confusing-arrow": [
+      0
+    ]
+  }
+}

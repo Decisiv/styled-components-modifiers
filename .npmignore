@@ -1,0 +1,7 @@
+coverage
+lib
+.babelrc
+.eslintrc
+.github
+*npm-debug.log
+*.DS_Store

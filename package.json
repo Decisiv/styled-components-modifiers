@@ -1,0 +1,72 @@
+{
+  "name": "styled-components-modifiers",
+  "version": "0.1.0",
+  "description": "A library that enables BEM flavored modifiers to styled components",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decisiv/Development/styled-components-modifiers.git"
+  },
+  "keywords": [
+    "styled-components",
+    "bem",
+    "blocks",
+    "elements",
+    "modifiers",
+    "responsive",
+    "css",
+    "react"
+  ],
+  "contributors" : [ "UI Platform Development Team at Decisiv, Inc." ],
+  "scripts": {
+    "build": "babel lib -d dist --ignore *__tests__/",
+    "build:clean": "rimraf ./dist",
+    "lint": "eslint lib/**; exit 0",
+    "prebuild": "npm run build:clean && npm run lint && npm run test",
+    "prepublish": "npm run build",
+    "review": "npm run lint && npm test",
+    "test": "jest",
+    "test:coverage:report": "opn coverage/lcov-report/index.html"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.4.0"
+  },
+  "dependencies": {
+    "lodash.curry": "^4.1.1",
+    "lodash.difference": "^4.5.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.forin": "^4.4.0",
+    "lodash.iserror": "^3.1.1",
+    "lodash.keys": "^4.2.0",
+    "lodash.mapvalues": "^4.6.0",
+    "lodash.uniq": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.0",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^20.0.4",
+    "opn-cli": "^3.1.0",
+    "prop-types": "^15.5.10",
+    "rimraf": "^2.6.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**",
+      "!lib/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}
