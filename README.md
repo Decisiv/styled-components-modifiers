@@ -13,13 +13,13 @@ This package is available on npm as `styled-components-modifiers`, and you can f
 To install the latest stable version with `yarn`:
 
 ```sh
-$ npm install styled-components-modifiers --save
+$ yarn add styled-components-modifiers
 ```
 
 ...or with 'npm':
 
 ```sh
-$ yarn add styled-components-modifiers
+$ npm install styled-components-modifiers --save
 ```
 
 ## Blocks and Elements
