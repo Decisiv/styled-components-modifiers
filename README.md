@@ -4,6 +4,20 @@ Styled Components are incredibly useful when building an application, but the co
 
 This library enhances [`styled-components`](https://www.styled-components.com/) by allowing you to use BEM-flavored conventions when building your components.
 
+## Installation
+
+This package is available on npm as `styled-components-modifiers`, and you can find it [here](https://www.npmjs.com/package/styled-components-modifiers).
+
+To install the latest, stable version, run:
+```shell
+$ npm install styled-components-modifiers --save
+```
+
+_or_
+```shell
+$ yarn add styled-components-modifiers
+```
+
 ## Blocks and Elements
 
 Our method for structuring Blocks and Elements doesn’t actually require any special tooling. It’s a simple convention we use for namespacing the components. You just need to add the Elements as properties of a Block component:
