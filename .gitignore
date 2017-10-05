@@ -1,5 +1,8 @@
+### Project build artifacts ###
 dist
+reports
 
+### Standard .gitignore stuff... ###
 # Created by https://www.gitignore.io/api/osx,git,node,linux,windows
 
 ### Git ###
