@@ -1,6 +1,8 @@
 # Styled Components Modifiers
 
-[![CircleCI](https://img.shields.io/circleci/project/github/Decisiv/styled-components-modifiers.svg)]()
+[![CircleCI](https://img.shields.io/circleci/project/github/Decisiv/styled-components-modifiers/master.svg)](https://circleci.com/gh/Decisiv/styled-components-modifiers/tree/master)
+[![npm](https://img.shields.io/npm/v/styled-components-modifiers.svg)](https://www.npmjs.com/package/styled-components-modifiers)
+
 
 Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out [Block, Element, Modifier (BEM) conventions](http://getbem.com).
 
