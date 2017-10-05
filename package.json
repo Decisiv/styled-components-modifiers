@@ -17,7 +17,9 @@
     "css",
     "react"
   ],
-  "contributors" : [ "UI Platform Development Team at Decisiv, Inc." ],
+  "contributors": [
+    "UI Platform Development Team at Decisiv, Inc."
+  ],
   "scripts": {
     "build": "babel lib -d dist --ignore *__tests__/",
     "build:clean": "rimraf ./dist",
@@ -26,7 +28,9 @@
     "prepublish": "npm run build",
     "review": "npm run lint && npm test",
     "test": "jest",
-    "test:coverage:report": "opn coverage/lcov-report/index.html"
+    "test:coverage:report": "opn coverage/lcov-report/index.html",
+    "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml lib/**",
+    "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
   },
   "peerDependencies": {
     "prop-types": "^15.4.0"
@@ -46,10 +50,12 @@
     "babel-eslint": "^7.2.0",
     "babel-preset-latest": "^6.24.0",
     "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.0.5",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.7.0",
     "jest": "^20.0.4",
+    "jest-junit": "^3.1.0",
     "opn-cli": "^3.1.0",
     "prop-types": "^15.5.10",
     "rimraf": "^2.6.1"
