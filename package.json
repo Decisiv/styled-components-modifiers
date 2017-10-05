@@ -57,8 +57,8 @@
     "jest": "^21.2.1",
     "jest-junit": "^3.1.0",
     "opn-cli": "^3.1.0",
-    "prop-types": "^15.5.10",
-    "rimraf": "^2.6.1"
+    "prop-types": "^15.6.0",
+    "rimraf": "^2.6.2"
   },
   "jest": {
     "collectCoverage": true,
