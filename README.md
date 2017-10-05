@@ -8,13 +8,13 @@ This library enhances [`styled-components`](https://www.styled-components.com/) 
 
 This package is available on npm as `styled-components-modifiers`, and you can find it [here](https://www.npmjs.com/package/styled-components-modifiers).
 
-To install the latest, stable version, run:
-```shell
+To install the latest, stable version with `npm` run:
+```sh
 $ npm install styled-components-modifiers --save
 ```
 
-_or_
-```shell
+...or `yarn`
+```sh
 $ yarn add styled-components-modifiers
 ```
 
