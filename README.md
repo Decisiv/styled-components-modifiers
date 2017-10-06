@@ -31,7 +31,7 @@ Our method for structuring Blocks and Elements doesn’t actually require any sp
   const Button = styled.button``;
 
   // Define your Icon styled component (the Element)
-  const Icon = styled(FontAwesome);
+  const Icon = styled(FontAwesome)``;
 
   // Add the Icon as a property of the Button
   Button.Icon = Icon;
@@ -62,7 +62,7 @@ The modifiers are passed in as an array of flags, each of which changes the appe
 
 ## Defining Modifiers
 
-The core of `styled-components-modifiers` is a modifier configuration object. The _keys_ in this object become the available flags that can be passed to the component's `modifiers`  prop. Each _value_ in the configuration object is a function that returns an object with a `styles` key.
+The core of `styled-components-modifiers` is a modifier configuration object. The _keys_ in this object become the available flags that can be passed to the component's `modifiers`  prop. Each _value_ defines a function that returns a CSS style string.
 
 For our demo, let's first set up a modifier configuration object:
 
@@ -70,32 +70,27 @@ For our demo, let's first set up a modifier configuration object:
 const MODIFIER_CONFIG = {
   // The functions receive the props of the component as the only argument.
   // Here, we destructure the theme from the argument for use within the modifier styling.
-  disabled: ({ theme }) => ({
-    // The `styles` in a definition are applied any time the modifier is used.
-    styles: `
-      background-color: ${theme.colors.grey_400};
-      color: ${theme.colors.grey_100};
-    `,
-  }),
+  disabled: ({ theme }) => `
+    // These styles are applied any time this modifier is used.
+    background-color: ${theme.colors.chrome_400};
+    color: ${theme.colors.chrome_100};
+  `,
 
+  // Alternatively, you can return an object with your styles under the key `styles`.
   success: ({ theme }) => ({
     styles: `
       background-color: ${theme.colors.success};
     `,
   }),
 
-  warning: ({ theme }) => ({
-    styles: `
-      background-color: ${theme.colors.warning};
-    `,
-  }),
+  warning: ({ theme }) => `
+    background-color: ${theme.colors.warning};
+  `,
 
-  large: () => ({
-    styles: `
-      height: 3em;
-      width: 6em;
-    `,
-  }),
+  large: () => `
+    height: 3em;
+    width: 6em;
+  `,
 };
 ```
 
@@ -106,10 +101,9 @@ import styled from 'styled-components';
 import { applyStyleModifiers } from 'styled-components-modifiers';
 
 const Button = styled.button`
-  // Any styles that won't change or may be overruled can go
-  // above where you apply the style modifiers.
-  // In BEM, this would be the styles you apply in either the
-  // Block or Element class's primary definition
+  // Any styles that won't change or may be overruled can go above where you
+  // apply the style modifiers. In BEM, these would be the styles you apply in
+  // either the Block or Element class's primary definition
   font-size: 24px;
   padding: 16px
 
@@ -124,7 +118,7 @@ The end result is a block (`Button`) with four available modifiers (`disabled`, 
 
 ## Applying Modifiers
 
-Applying modifiers when rendering the component is as simple as providing a `modifiers` prop. The prop should be an array of strings representing the keys in the modifier configuration object you wish to apply.
+Applying modifiers when rendering the component is as simple as providing a `modifiers` prop. The prop should be an array of strings that correspond to keys in the modifier configuration object applied to the component.
 
 ```jsx
 function Form() {
@@ -187,6 +181,7 @@ const Button = styled.button`
 Button.propTypes = {
   // Setup validation of the "normal" modifier flags:
   modifiers: styleModifierPropTypes(MODIFIER_CONFIG),
+
   // You can also validate the responsive modifier flags:
   responsiveModifiers: responsiveStyleModifierPropTypes(MODIFIER_CONFIG),
 }
@@ -208,7 +203,7 @@ Using responsive modifiers is a little bit different, though, but just as simple
 
 It works by matching the `size` prop provided to the component with the keys of the `responsiveModifiers` prop, and then applying the appropriate modifier(s) based on the corresponding value in `responsiveModifiers`.
 
-So, for example, when `Button` receives a prop `size` with a value equal to `medium`, the modifiers `success` and `large` will be applied to the `Button`. If `size` does not match any key in the `responsiveModifiers`, _no_ modifiers will be applied.
+So, for example, when `Button` receives a prop `size` with a value equal to `medium`, the modifiers `success` and `large` will be applied to the `Button`. If `size` does not match any key in the `responsiveModifiers`, _no_ additional modifiers will be applied. Your normal `modifiers` array will still work exactly the same.
 
 Tada! Responsive styling!
 

@@ -25,7 +25,6 @@
     "build:clean": "rimraf ./dist",
     "lint": "eslint lib/**; exit 0",
     "prebuild": "npm run build:clean && npm run lint && npm run test",
-    "prepublish": "npm run build",
     "review": "npm run lint && npm test",
     "test": "jest",
     "test:coverage:report": "opn coverage/lcov-report/index.html",
@@ -41,8 +40,8 @@
     "lodash.flatten": "^4.4.0",
     "lodash.forin": "^4.4.0",
     "lodash.iserror": "^3.1.1",
+    "lodash.isobject": "^3.0.2",
     "lodash.keys": "^4.2.0",
-    "lodash.mapvalues": "^4.6.0",
     "lodash.uniq": "^4.5.0"
   },
   "devDependencies": {
