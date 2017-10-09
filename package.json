@@ -1,6 +1,6 @@
 {
   "name": "styled-components-modifiers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that enables BEM flavored modifiers to styled components",
   "main": "dist/index.js",
   "repository": {
