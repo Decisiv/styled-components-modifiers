@@ -4,37 +4,45 @@
 [![npm version](https://img.shields.io/npm/v/styled-components-modifiers.svg)](https://www.npmjs.com/package/styled-components-modifiers)
 [![npm downloads](https://img.shields.io/npm/dt/styled-components-modifiers.svg)](https://www.npmjs.com/package/styled-components-modifiers)
 
+Styled Components are incredibly useful when building an application, but the
+community lacks guidelines and best practices for how to structure, organize,
+and modify a component library. Fortunately, the CSS ecosystem has several
+solutions for this, including the very well-thought-out
+[Block, Element, Modifier (BEM) conventions](http://getbem.com).
 
-Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out [Block, Element, Modifier (BEM) conventions](http://getbem.com).
+This library enhances [`styled-components`](https://www.styled-components.com/)
+by allowing you to use BEM-flavored conventions when building your components.
 
-This library enhances [`styled-components`](https://www.styled-components.com/) by allowing you to use BEM-flavored conventions when building your components.
+## Contents
 
-## Installation
+- [Overview](#overview)
+  - [Blocks and Elements](#blocks-and-elements)
+  - [Modifiers](#modifiers)
+- [Installation](#installation)
+- [Using Styled Components Modifiers](#using-styled-components-modifiers)
+  - [Defining Modifiers](#defining-modifiers)
+  - [Validating Modifiers](#validating-modifiers)
+  - [Applying Modifiers](#applying-modifiers)
+  - [Responsive Modifiers](#responsive-modifiers)
+  - [Alternative Prop Names](#alternative-prop-names)
+- [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
+- [Contributing](#contributing)
+- [License](#license)
 
-This package is available on npm as `styled-components-modifiers`, and you can find it [here](https://www.npmjs.com/package/styled-components-modifiers).
+## Overview
 
-To install the latest stable version with `yarn`:
+### Blocks and Elements
 
-```sh
-$ yarn add styled-components-modifiers
-```
-
-...or with `npm`:
-
-```sh
-$ npm install styled-components-modifiers --save
-```
-
-## Blocks and Elements
-
-Our method for structuring Blocks and Elements doesn’t actually require any special tooling. It’s a simple convention we use for namespacing the components. You just need to add the Elements as properties of a Block component:
+Our method for structuring Blocks and Elements doesn’t actually require any
+special tooling. It’s just a simple convention we use for namespacing the
+components, add the Elements as properties of a Block component:
 
 ```jsx
   // Define your Button styled component (the Block)
   const Button = styled.button``;
 
   // Define your Icon styled component (the Element)
-  const Icon = styled(FontAwesome)``;
+  const Icon = styled(IconComponent)``;
 
   // Add the Icon as a property of the Button
   Button.Icon = Icon;
@@ -49,23 +57,48 @@ Our method for structuring Blocks and Elements doesn’t actually require any sp
   }
 ```
 
-This gives us a nice namespacing that's easy to visualize in a Blocks and Elements structure.
+This gives us a nice namespacing that's easy to visualize in a Blocks and
+Elements structure.
 
 But what about _modifiers_?
 
-## Modifiers
+### Modifiers
 
-Our implementation of modifiers, as applied to `styled-components`, looks like this:
+This tool allows you to implement modifiers and apply them to
+`styled-components` like this:
 
 ```jsx
-  <Button modifiers={['success', 'large']}>...</Button>
+<Button modifiers={['success', 'large']}>...</Button>
 ```
 
-The modifiers are passed in as an array of flags, each of which changes the appearance, behavior, or state of the Block or Element component to which they are applied.
+The modifiers are passed in as an array of flags. Each flag changes the
+appearance of the Block or Element component.
 
-## Defining Modifiers
+## Installation
 
-The core of `styled-components-modifiers` is a modifier configuration object. The _keys_ in this object become the available flags that can be passed to the component's `modifiers`  prop. Each _value_ defines a function that returns a CSS style string.
+This package is
+[available on npm as `styled-components-modifiers`](https://www.npmjs.com/package/styled-components-modifiers).
+
+To install the latest stable version with `npm`:
+
+```sh
+$ npm install styled-components-modifiers --save
+```
+
+...or with `yarn`:
+
+```sh
+$ yarn add styled-components-modifiers
+```
+
+## Using Styled Components Modifiers
+
+### Defining Modifiers
+
+The core of `styled-components-modifiers` is a modifier configuration object.
+The _keys_ in this object become the available flags that can be passed to the
+component's `modifiers` prop. Each _value_ defines a function that returns a CSS
+style string.
 
 For our demo, let's first set up a modifier configuration object:
 
@@ -97,7 +130,8 @@ const MODIFIER_CONFIG = {
 };
 ```
 
-Then, we need to apply the modifier configuration object (`MODIFIER_CONFIG`) to the styled component we want to modify:
+Then, we need to apply the modifier configuration object (`MODIFIER_CONFIG`) to
+the styled component we want to modify:
 
 ```jsx
 import styled from 'styled-components';
@@ -106,41 +140,26 @@ import { applyStyleModifiers } from 'styled-components-modifiers';
 const Button = styled.button`
   // Any styles that won't change or may be overruled can go above where you
   // apply the style modifiers. In BEM, these would be the styles you apply in
-  // either the Block or Element class's primary definition
+  // either the Block or Element class's primary definition.
   font-size: 24px;
-  padding: 16px
+  padding: 16px;
 
-  // Then apply the modifier configuration:
-  ${applyStyleModifiers(MODIFIER_CONFIG)}
+  // Then apply the modifier configuration.
+  ${applyStyleModifiers(MODIFIER_CONFIG)};
 `;
 
 export default Button;
 ```
 
-The end result is a block (`Button`) with four available modifiers (`disabled`, `success`, `warning`, and `large`).
+The end result is a block (`Button`) with four available modifiers (`disabled`,
+`success`, `warning`, and `large`).
 
-## Applying Modifiers
+### Validating Modifiers
 
-Applying modifiers when rendering the component is as simple as providing a `modifiers` prop. The prop should be an array of strings that correspond to keys in the modifier configuration object applied to the component.
-
-```jsx
-function Form() {
-  return (
-    <div>
-      // ...the rest of form goes here...
-
-      // Render a button, and give it a `modifiers` prop with the desired modifiers.
-      <Button modifiers={['success']} />
-    </div>
-  )
-}
-```
-
-In the example above, our button will have the `styles` from the `success` modifier applied.
-
-## Validating Modifiers
-
-Based on that, you can see how easy it would be to pass a value to a `modifiers` prop that is not found in the component's modifier configuration object. Fortunately, we have a tool to help with that: just validate the `modifiers` prop with `styleModifierPropTypes`:
+Because the modifiers are an arbitrary array of flags, it is very easy to pass a
+value as a modifier that is not found in the component's modifier configuration
+object. Fortunately, we have a tool to help with that: you can validate the
+`modifiers` prop with `styleModifierPropTypes`:
 
 ```jsx
 // In the Button component's file
@@ -150,13 +169,38 @@ import { styleModifierPropTypes } from 'styled-components-modifiers';
 
 Button.propTypes = {
   modifiers: styleModifierPropTypes(MODIFIER_CONFIG),
+};
+```
+
+This will validate that only keys found within our `MODIFIER_CONFIG` are
+supplied to the styled component. It will also throw a `PropTypes` error if an
+invalid modifier is used.
+
+### Applying Modifiers
+
+Applying modifiers when rendering the component is as simple as providing a
+`modifiers` prop. The prop should be an array of strings that correspond to keys
+in the modifier configuration object applied to the component.
+
+```jsx
+function Form() {
+  return (
+    <div>
+      {/* ...the rest of form goes here... */}
+      {/* Render a button, and give it a `modifiers` prop with the desired modifiers. */}
+      <Button modifiers={['success']} />
+    </div>
+  );
 }
 ```
-This will validate that only keys found within our `MODIFIER_CONFIG` are supplied to the styled component. It will also throw a `PropTypes` error if an invalid modifier is used.
 
-## Responsive Modifiers
+In the example above, our button will have the `styles` from the `success`
+modifier applied.
 
-When designing components that are intended to be responsive, you may find it useful to apply different styles based on a `size` prop as shown below.
+### Responsive Modifiers
+
+When designing components that are intended to be responsive, you may find it
+useful to apply different styles based on a `size` prop as shown below.
 
 ```jsx
 import styled from 'styled-components';
@@ -164,7 +208,7 @@ import {
   applyResponsiveStyleModifiers,
   applyStyleModifiers,
   responsiveStyleModifierPropTypes,
-  styleModifierPropTypes ,
+  styleModifierPropTypes,
 } from 'styled-components-modifiers';
 
 // Define the MODIFIER_CONFIG in exactly the same way as above. You would use the same
@@ -187,32 +231,41 @@ Button.propTypes = {
 
   // You can also validate the responsive modifier flags:
   responsiveModifiers: responsiveStyleModifierPropTypes(MODIFIER_CONFIG),
-}
+};
 
 export default Button;
 ```
 
-Using responsive modifiers is a little bit different, though, but just as simple:
+Using responsive modifiers is a little bit different, though, but just as
+simple:
 
 ```jsx
-  <Button
-    responsiveModifiers={{
-      small: ['disabled'],
-      medium: ['success', 'large'],
-    }}
-    size={getTheSizeFromSomewhere()}
-  />
+<Button
+  responsiveModifiers={{
+    small: ['disabled'],
+    medium: ['success', 'large'],
+  }}
+  size={getTheSizeFromSomewhere()}
+/>
 ```
 
-It works by matching the `size` prop provided to the component with the keys of the `responsiveModifiers` prop, and then applying the appropriate modifier(s) based on the corresponding value in `responsiveModifiers`.
+It works by matching the `size` prop provided to the component with the keys of
+the `responsiveModifiers` prop, and then applying the appropriate modifier(s)
+based on the corresponding value in `responsiveModifiers`.
 
-So, for example, when `Button` receives a prop `size` with a value equal to `medium`, the modifiers `success` and `large` will be applied to the `Button`. If `size` does not match any key in the `responsiveModifiers`, _no_ additional modifiers will be applied. Your normal `modifiers` array will still work exactly the same.
+So, for example, when `Button` receives a prop `size` with a value equal to
+`medium`, the modifiers `success` and `large` will be applied to the `Button`.
+If `size` does not match any key in the `responsiveModifiers`, _no_ additional
+modifiers will be applied. Your normal `modifiers` array will still work exactly
+the same.
 
 Tada! Responsive styling!
 
-## Alternative Prop Names
+### Alternative Prop Names
 
-Finally, let’s say you want to apply multiple modifier arrays, or perhaps you just really don't like naming the prop `modifiers`. You can name the prop something else when you apply the props to your component:
+Finally, let’s say you want to apply multiple modifier arrays, or perhaps you
+just really don't like naming the prop `modifiers`. You can name the prop
+something else when you apply the props to your component:
 
 ```jsx
 const Button = styled.button`
@@ -224,9 +277,27 @@ const Button = styled.button`
 
 The same can be done when you `applyResponsiveStyleModifiers`.
 
+## Built with Styled Components Modifiers
+
+Here's your chance to showcase work you are proud of! Feel free to add a link to
+any projects using Styled Components Modifiers:
+
+Websites/ Apps:
+
+- [React Companies](https://www.react-companies.com/)
+  ([code](https://github.com/andrewtpoe/react-companies)) - A curated list of
+  companies using React JS in production, organized by industry.
+- Add yours here!
+
+Component Libraries:
+
+- Add yours here!
+
 ## Contributing
 
-We are thankful for any contributions made by the community. By contributing you agree to abide by the Code of Conduct in our [Contributing Guidelines](https://github.com/Decisiv/styled-components-modifiers/blob/master/.github/CONTRIBUTING.md).
+We are thankful for any contributions made by the community. By contributing you
+agree to abide by the Code of Conduct in our
+[Contributing Guidelines](https://github.com/Decisiv/styled-components-modifiers/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 
