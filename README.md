@@ -186,8 +186,8 @@ in the modifier configuration object applied to the component.
 function Form() {
   return (
     <div>
-      // ...the rest of form goes here... // Render a button, and give it a
-      `modifiers` prop with the desired modifiers.
+      {/* ...the rest of form goes here... */}
+      {/* Render a button, and give it a `modifiers` prop with the desired modifiers. */}
       <Button modifiers={['success']} />
     </div>
   );
