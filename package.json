@@ -1,6 +1,6 @@
 {
   "name": "styled-components-modifiers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library that enables BEM flavored modifiers to styled components",
   "main": "dist/index.js",
   "repository": {
@@ -20,6 +20,7 @@
   "contributors": [
     "UI Platform Development Team at Decisiv, Inc."
   ],
+  "license": "MIT",
   "scripts": {
     "build": "babel lib -d dist --ignore *__tests__/",
     "build:clean": "rimraf ./dist",
