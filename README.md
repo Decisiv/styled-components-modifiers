@@ -71,8 +71,28 @@ This tool allows you to implement modifiers and apply them to
 <Button modifiers={['success', 'large']}>...</Button>
 ```
 
-The modifiers are passed in as an array of flags. Each flag changes the
-appearance of the Block or Element component.
+or as a single string like this:
+
+```jsx
+<Button modifiers="success">...</Button>
+```
+
+The modifiers are passed in as an array of flags or a single flag.
+Each flag changes the appearance of the Block or Element component.
+When passing in an array, the values are filtered and only strings are used,
+which means that it is safe to do the following:
+
+```jsx
+<Button modifiers={['large', isLoading && 'loading']}>...</Button>
+```
+
+which, if `isLoading` is `false`, resolves to:
+
+```jsx
+<Button modifiers={['large', false]}>...</Button>
+```
+
+In this case only `large` will be used.
 
 ## Installation
 
@@ -188,7 +208,7 @@ function Form() {
     <div>
       {/* ...the rest of form goes here... */}
       {/* Render a button, and give it a `modifiers` prop with the desired modifiers. */}
-      <Button modifiers={['success']} />
+      <Button modifiers="success" />
     </div>
   );
 }
@@ -242,7 +262,7 @@ simple:
 ```jsx
 <Button
   responsiveModifiers={{
-    small: ['disabled'],
+    small: 'disabled',
     medium: ['success', 'large'],
   }}
   size={getTheSizeFromSomewhere()}
