@@ -1,6 +1,9 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb-base",
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended"
+  ],
   "globals": {
     "test": true,
     "expect": true,
@@ -16,5 +19,8 @@
     "no-confusing-arrow": [
       0
     ]
-  }
+  },
+  "plugins": [
+    "flowtype"
+  ]
 }
