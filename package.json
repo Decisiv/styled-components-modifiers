@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "babel lib -d dist --ignore *__tests__/",
+    "build": "babel lib -d dist --ignore *__tests__/ && flow-copy-source -v -i '*__tests__/' lib dist",
     "build:clean": "rimraf ./dist",
     "lint": "eslint lib/**; exit 0",
     "prebuild": "npm run build:clean && npm run lint && npm run test",
@@ -61,6 +61,7 @@
     "eslint-plugin-flowtype": "^3.2.1",
     "eslint-plugin-import": "^2.7.0",
     "flow-bin": "^0.90.0",
+    "flow-copy-source": "^2.0.2",
     "jest": "^21.2.1",
     "jest-junit": "^3.1.0",
     "opn-cli": "^3.1.0",
