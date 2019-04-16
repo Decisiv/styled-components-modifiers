@@ -15,19 +15,21 @@ by allowing you to use BEM-flavored conventions when building your components.
 
 ## Contents
 
-- [Overview](#overview)
-  - [Blocks and Elements](#blocks-and-elements)
-  - [Modifiers](#modifiers)
-- [Installation](#installation)
-- [Using Styled Components Modifiers](#using-styled-components-modifiers)
-  - [Defining Modifiers](#defining-modifiers)
-  - [Validating Modifiers](#validating-modifiers)
-  - [Applying Modifiers](#applying-modifiers)
-  - [Responsive Modifiers](#responsive-modifiers)
-  - [Alternative Prop Names](#alternative-prop-names)
-- [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
-- [Contributing](#contributing)
-- [License](#license)
+- [Styled Components Modifiers](#styled-components-modifiers)
+  - [Contents](#contents)
+  - [Overview](#overview)
+    - [Blocks and Elements](#blocks-and-elements)
+    - [Modifiers](#modifiers)
+  - [Installation](#installation)
+  - [Using Styled Components Modifiers](#using-styled-components-modifiers)
+    - [Defining Modifiers](#defining-modifiers)
+    - [Validating Modifiers](#validating-modifiers)
+    - [Applying Modifiers](#applying-modifiers)
+    - [Responsive Modifiers](#responsive-modifiers)
+    - [Alternative Prop Names](#alternative-prop-names)
+  - [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Overview
 
@@ -139,7 +141,9 @@ const MODIFIER_CONFIG = {
     `,
   }),
 
-  warning: ({ theme }) => `
+  // Styled Components exports a `css` util that enables some nice linting and interpolation
+  // features. You can use it directly or with the `styles` object pattern.
+  warning: ({ theme }) => css`
     background-color: ${theme.colors.warning};
   `,
 

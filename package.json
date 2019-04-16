@@ -1,6 +1,6 @@
 {
   "name": "styled-components-modifiers",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A library that enables BEM flavored modifiers to styled components",
   "main": "dist/index.js",
   "repository": {
@@ -33,13 +33,15 @@
     "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
   },
   "peerDependencies": {
-    "prop-types": "^15.4.0"
+    "prop-types": "^15.4.0",
+    "styled-components": "^2 | ^3 | ^4"
   },
   "dependencies": {
     "lodash.curry": "^4.1.1",
     "lodash.difference": "^4.5.0",
     "lodash.flatten": "^4.4.0",
     "lodash.forin": "^4.4.0",
+    "lodash.isarray": "^4.0.0",
     "lodash.iserror": "^3.1.1",
     "lodash.isfunction": "^3.0.8",
     "lodash.isobject": "^3.0.2",
@@ -59,7 +61,10 @@
     "jest-junit": "^3.1.0",
     "opn-cli": "^3.1.0",
     "prop-types": "^15.6.0",
-    "rimraf": "^2.6.2"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.2",
+    "styled-components": "^4.2.0"
   },
   "jest": {
     "collectCoverage": true,
