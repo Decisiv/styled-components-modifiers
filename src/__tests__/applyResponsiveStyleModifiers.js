@@ -62,3 +62,15 @@ test('returns default modifiers if size prop does not match', () => {
   expect(styles).toContain('display: relative;');
   expect(styles).not.toContain('background-color: black;');
 });
+
+test('returns null when non responsive modifiers are provided', () => {
+  const props = {
+    responsiveModifiers: 'badModifiers',
+    size: 'XS',
+    theme,
+  };
+
+  expect(applyResponsiveStyleModifiers(defaultModifierConfig)(props)).toEqual(
+    null,
+  );
+});

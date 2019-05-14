@@ -3,6 +3,7 @@
 
 ### Project build artifacts ###
 dist
+lib
 reports
 
 ### Standard .gitignore stuff... ###
