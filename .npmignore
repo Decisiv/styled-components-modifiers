@@ -1,5 +1,5 @@
 coverage
-lib
+src
 .babelrc
 .eslintrc
 .github

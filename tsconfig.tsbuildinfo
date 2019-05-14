@@ -1,0 +1,1040 @@
+{
+  "program": {
+    "fileInfos": {
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88",
+        "signature": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843",
+        "signature": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "6549045e428b5f483bc82d6e8f6d01a72decd0cb7387f650f365f2210fe10808",
+        "signature": "6549045e428b5f483bc82d6e8f6d01a72decd0cb7387f650f365f2210fe10808"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "1c05c805f62c1c06a60b7812cd8de2dff7a5bda2218ce5edda5d9d298b1c48e1",
+        "signature": "1c05c805f62c1c06a60b7812cd8de2dff7a5bda2218ce5edda5d9d298b1c48e1"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376",
+        "signature": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d",
+        "signature": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4",
+        "signature": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe",
+        "signature": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4",
+        "signature": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4",
+        "signature": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0",
+        "signature": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "fc7c02b980e7dda0ed14d57ee71705c09efc51ec6286a10b971a25a3bb29262b",
+        "signature": "fc7c02b980e7dda0ed14d57ee71705c09efc51ec6286a10b971a25a3bb29262b"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "669427ac10ef9f52b6a7a502a66670eaabba675e0a660eb971041bd73c9894e3",
+        "signature": "669427ac10ef9f52b6a7a502a66670eaabba675e0a660eb971041bd73c9894e3"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "7a842c21e0fe143eb3ad4d689a1470bab5ed9bc7fd7223fe8b56cbae27038d62",
+        "signature": "7a842c21e0fe143eb3ad4d689a1470bab5ed9bc7fd7223fe8b56cbae27038d62"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8",
+        "signature": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.bigint.d.ts": {
+        "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
+        "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/constants.ts": {
+        "version": "194d9e5780badac45306163f5fb76759dc1ebc53f22e0d66a246289ee29c241e",
+        "signature": "e7933e50783f8e49a893620417cd26feb6d37fc31d94c7fad60559abfb953564"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
+        "version": "1ab36cdbb5af99fc06711bbd51d7bf09d5fedaba0223f15f45708d9882ffb853",
+        "signature": "1ab36cdbb5af99fc06711bbd51d7bf09d5fedaba0223f15f45708d9882ffb853"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts": {
+        "version": "b6d3763d7f9ce84118df4340505c24384267ccb48fa8772852260cb5ed4617c2",
+        "signature": "b6d3763d7f9ce84118df4340505c24384267ccb48fa8772852260cb5ed4617c2"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
+        "version": "dfe341e9b1fbba9efd858aec6b2bce3ba27f1d572caf6a041b44eab94c88c864",
+        "signature": "dfe341e9b1fbba9efd858aec6b2bce3ba27f1d572caf6a041b44eab94c88c864"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts": {
+        "version": "45bf6da7cede8211b7d0579deabfa227490dfe8b932a56a962599efc48356e68",
+        "signature": "45bf6da7cede8211b7d0579deabfa227490dfe8b932a56a962599efc48356e68"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
+        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts": {
+        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts": {
+        "version": "d04c462c622fc52b3b75c8b7eeb9e6ec2123414893a1cf3668c592e22f185ed2",
+        "signature": "d04c462c622fc52b3b75c8b7eeb9e6ec2123414893a1cf3668c592e22f185ed2"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts": {
+        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts": {
+        "version": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67",
+        "signature": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts": {
+        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts": {
+        "version": "288bd8810361e76f2d7a6fff8ae9906c263ef9bab12df6bf633954526c71be7f",
+        "signature": "288bd8810361e76f2d7a6fff8ae9906c263ef9bab12df6bf633954526c71be7f"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts": {
+        "version": "f77fe6e75f9ca148c06223173801691e8ec6c12804097152f97eecd86f3c8224",
+        "signature": "e4ebadd63572c21f63b822265670c380daa01a7e34e7297309b48b4d865b905a"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts": {
+        "version": "868ce5f4de7877e493f89b7308efdba22efa2f07c31ce2c9eb4a8aad44429e1c",
+        "signature": "868ce5f4de7877e493f89b7308efdba22efa2f07c31ce2c9eb4a8aad44429e1c"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/utils/normalizemodifiers.ts": {
+        "version": "e0c2119104172b701bd105eba9ee430af61cb0bc497c7101e0b4e4526fe580fc",
+        "signature": "f6b5b0ad76005cb77f742bee27253889616d943adbf98f56b2db9e56411776c9"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/utils/modifiedstyles.ts": {
+        "version": "0dad6626f0b8ac8c5c9955323cfcb2b7cfb5fa2936d9f4fee63aef5aa8fbea87",
+        "signature": "7694e525bf8f8b86e52122d197cd6cb99563cc6c8de69a0aee6f01008cf4484e"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/applyresponsivestylemodifiers.ts": {
+        "version": "879f64bff428b6004ac01fb41d1199b7df7932079914cb4f0c98c33e614f2178",
+        "signature": "a1b50ab60744474801472b10f6226cc521123b5d2756dff3f42b2ad1991d8951"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/applystylemodifiers.ts": {
+        "version": "e95d6674b620c95e366f13725a51e7fd1b2b0b40bcb6b62d48e2bbed39c2a4da",
+        "signature": "a2a0e7a6e36c4dae49a76cbe0b6412b5c19209ff7798c1b67b6114c44039be93"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts": {
+        "version": "2e3eddea5ee7b2b48ab38903a9ed24a4cf5769f11ba49c202c1e02943fbd7ea3",
+        "signature": "2e3eddea5ee7b2b48ab38903a9ed24a4cf5769f11ba49c202c1e02943fbd7ea3"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.flatten/index.d.ts": {
+        "version": "96b729b46007058fceb10567283275a023415f724af78e91cab3ac7073c19635",
+        "signature": "96b729b46007058fceb10567283275a023415f724af78e91cab3ac7073c19635"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.forin/index.d.ts": {
+        "version": "d91b03ad0f4ba2aa16b67cfb2b578a8e1cde9c65e976c1575b01cf0f7a3f0c0e",
+        "signature": "d91b03ad0f4ba2aa16b67cfb2b578a8e1cde9c65e976c1575b01cf0f7a3f0c0e"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.keys/index.d.ts": {
+        "version": "be0ea12ec351aa47205c44609a8da7f8a2fa06e30cb1f713e1c65aae63a22a17",
+        "signature": "be0ea12ec351aa47205c44609a8da7f8a2fa06e30cb1f713e1c65aae63a22a17"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts": {
+        "version": "db500d1d75c48f7c52d0c1a32f3dcb51ce77cd4c126a3df4b192a5787a7c6925",
+        "signature": "db500d1d75c48f7c52d0c1a32f3dcb51ce77cd4c126a3df4b192a5787a7c6925"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts": {
+        "version": "5e632216dfe01f2ff76f1c312c28632fde75364c24d659b732f2ee59e9ccf1b2",
+        "signature": "5e632216dfe01f2ff76f1c312c28632fde75364c24d659b732f2ee59e9ccf1b2"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts": {
+        "version": "6078ae888bbc0cb0eb6d6bf1c711c2092d018df445e8f0220f7c6a828f0aefbf",
+        "signature": "d9010322669e93fa4dcaaa995b4afffea9fb86ca1409eb968a7fe3a2ca3ed8b9"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": {
+        "version": "2bdaa2281b873bc973c0c4d8cfe69eaf0ec0bb2765336f03e2127f5e8cc05beb",
+        "signature": "f67af2d7cd75524d7918ce90f7d98d93a212b1d64367b16b9681b3705d2177fc"
+      },
+      "/users/spage/projects/styled-components-modifiers/src/index.ts": {
+        "version": "1b5edb0a82e04cd45468d20b68a5b6ad8f3a01aae7a88bb817a966a194266702",
+        "signature": "a028026096f16c9355f26f03a6a4e1f9dc06a129c552b68954099c21844a3da8"
+      },
+      "/users/spage/projects/styled-components-modifiers/types/index.d.ts": {
+        "version": "046076aad3bde1008b559eb94a1b9a579e046d4cfeee66cdb749743894511e95",
+        "signature": "046076aad3bde1008b559eb94a1b9a579e046d4cfeee66cdb749743894511e95"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts": {
+        "version": "9eac0dd4de5669db2b8321dffa400b997f7b21181118efc7a2c1743d93d4be57",
+        "signature": "9eac0dd4de5669db2b8321dffa400b997f7b21181118efc7a2c1743d93d4be57"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts": {
+        "version": "19fb2161edf60fbe73ee3650c1cee889df0525ed852eff2d5fa6e5480c132ae3",
+        "signature": "19fb2161edf60fbe73ee3650c1cee889df0525ed852eff2d5fa6e5480c132ae3"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "30b805fe6d4272d147fea35fd859bc5f3e13b7c9d762bd35948fe842919452a5",
+        "signature": "30b805fe6d4272d147fea35fd859bc5f3e13b7c9d762bd35948fe842919452a5"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "67fb81fcd13edc5410665fa72892dd0878654b54946e8b0f10af5adc234bfe8f",
+        "signature": "67fb81fcd13edc5410665fa72892dd0878654b54946e8b0f10af5adc234bfe8f"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts": {
+        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__core/index.d.ts": {
+        "version": "8f279d393b3572c5c0a8428d46d00281c38a5ef52dc9dd513fc861c31a5d6420",
+        "signature": "8f279d393b3572c5c0a8428d46d00281c38a5ef52dc9dd513fc861c31a5d6420"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
+        "signature": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "70c61ff569aabdf2b36220da6c06caaa27e45cd7acac81a1966ab4ee2eadc4f2",
+        "signature": "70c61ff569aabdf2b36220da6c06caaa27e45cd7acac81a1966ab4ee2eadc4f2"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b",
+        "signature": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.curry/index.d.ts": {
+        "version": "f032d618fe3861a11866e5a1003c4991309e7d4e3e810196f8a2a851dce38120",
+        "signature": "f032d618fe3861a11866e5a1003c4991309e7d4e3e810196f8a2a851dce38120"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isarray/index.d.ts": {
+        "version": "7362d3110fb80fbefd2a5064c5740c7722d2fe85d193e8ef6a7a0c139ab82f7f",
+        "signature": "7362d3110fb80fbefd2a5064c5740c7722d2fe85d193e8ef6a7a0c139ab82f7f"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.iserror/index.d.ts": {
+        "version": "a7906081164a4f965be7330d37c545dcdb93ad6ae36c05c0820cab59d49e5168",
+        "signature": "a7906081164a4f965be7330d37c545dcdb93ad6ae36c05c0820cab59d49e5168"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/global.d.ts": {
+        "version": "d5b58524cdaac378daa8228fabc96d6cf6fba4b8940512c7b06f18da47fec7ba",
+        "signature": "d5b58524cdaac378daa8228fabc96d6cf6fba4b8940512c7b06f18da47fec7ba"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts": {
+        "version": "de74412313fd11c6c176b0dcd976d2be278e596da8b927d61e840bea5b184904",
+        "signature": "de74412313fd11c6c176b0dcd976d2be278e596da8b927d61e840bea5b184904"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts": {
+        "version": "b6379223e63ba25067f4f1c4f281b442827f70c292edb16316d6dca34a8c6549",
+        "signature": "b6379223e63ba25067f4f1c4f281b442827f70c292edb16316d6dca34a8c6549"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/globals.d.ts": {
+        "version": "c035c908a95e9a9e5ed600d5b760f42e3702ab7daaafe37f4c9333b6ae2165b0",
+        "signature": "c035c908a95e9a9e5ed600d5b760f42e3702ab7daaafe37f4c9333b6ae2165b0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts": {
+        "version": "d35a9cb1495a5344ba5678783dd3acf817b39019725e0221d4f8f4335358fa5e",
+        "signature": "d35a9cb1495a5344ba5678783dd3acf817b39019725e0221d4f8f4335358fa5e"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/batchedbridge.d.ts": {
+        "version": "51a997c9f91edc69fc4216a19e02161e5babeb8e8ecff99b49010ef2d38c9575",
+        "signature": "51a997c9f91edc69fc4216a19e02161e5babeb8e8ecff99b49010ef2d38c9575"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts": {
+        "version": "ae1a867799ca7265542b119e6e8f958651926a7c927d6f4177a44ea637f350e0",
+        "signature": "ae1a867799ca7265542b119e6e8f958651926a7c927d6f4177a44ea637f350e0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts": {
+        "version": "4a8c4fcff33986f736830fb65d7bac6d18999859cc51428f0cf0d721b85d0b41",
+        "signature": "4a8c4fcff33986f736830fb65d7bac6d18999859cc51428f0cf0d721b85d0b41"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/stack-utils/index.d.ts": {
+        "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts": {
+        "version": "4d05a299b7eb7700f4b913187f227d6a5e78f60f182a07faa6e05db2df9091a0",
+        "signature": "4d05a299b7eb7700f4b913187f227d6a5e78f60f182a07faa6e05db2df9091a0"
+      },
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/yargs/index.d.ts": {
+        "version": "8f3237f03af87871a18d49ff52dec94d71eabecca464d5f2a81e34b55fb60bb5",
+        "signature": "8f3237f03af87871a18d49ff52dec94d71eabecca464d5f2a81e34b55fb60bb5"
+      }
+    },
+    "options": {
+      "allowSyntheticDefaultImports": true,
+      "composite": true,
+      "declaration": true,
+      "declarationMap": true,
+      "emitDeclarationOnly": true,
+      "esModuleInterop": true,
+      "lib": [
+        "lib.esnext.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "module": 6,
+      "moduleResolution": 2,
+      "outDir": "/Users/spage/projects/styled-components-modifiers/lib",
+      "removeComments": true,
+      "rootDir": "/Users/spage/projects/styled-components-modifiers/src",
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "strict": true,
+      "target": 1,
+      "configFilePath": "/Users/spage/projects/styled-components-modifiers/tsconfig.json"
+    },
+    "referencedMap": {
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/utils/modifiedstyles.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/normalizemodifiers.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/applyresponsivestylemodifiers.ts": [
+        "/users/spage/projects/styled-components-modifiers/src/constants.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/modifiedstyles.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/applystylemodifiers.ts": [
+        "/users/spage/projects/styled-components-modifiers/src/constants.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/modifiedstyles.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.flatten/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.forin/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.keys/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.flatten/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.forin/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.keys/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/normalizemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/index.ts": [
+        "/users/spage/projects/styled-components-modifiers/src/applyresponsivestylemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/applystylemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts",
+        "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__core/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-reports/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.curry/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isarray/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.iserror/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/global.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/globals.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/batchedbridge.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "/users/spage/projects/styled-components-modifiers/src/index.ts": [
+        "/users/spage/projects/styled-components-modifiers/src/applyresponsivestylemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/applystylemodifiers.ts",
+        "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts",
+        "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.iserror/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isarray/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.curry/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.keys/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.forin/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.flatten/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/globals.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/batchedbridge.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/global.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__core/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-reports/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts",
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts": [
+        "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es5.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2016.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.dom.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.array.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.string.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "/users/spage/projects/styled-components-modifiers/src/constants.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/src/utils/normalizemodifiers.ts",
+      "/users/spage/projects/styled-components-modifiers/src/utils/modifiedstyles.ts",
+      "/users/spage/projects/styled-components-modifiers/src/applyresponsivestylemodifiers.ts",
+      "/users/spage/projects/styled-components-modifiers/src/applystylemodifiers.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.flatten/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.forin/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.keys/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/src/stylemodifierproptypes.ts",
+      "/users/spage/projects/styled-components-modifiers/src/responsivestylemodifierproptypes.ts",
+      "/users/spage/projects/styled-components-modifiers/src/index.ts",
+      "/users/spage/projects/styled-components-modifiers/types/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__template/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/babel__core/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-lib-report/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/istanbul-reports/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.curry/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.isarray/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/lodash.iserror/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/global.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/csstype/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/globals.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/batchedbridge.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/devtools.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/react-native/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/stack-utils/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts",
+      "/users/spage/projects/styled-components-modifiers/node_modules/@types/yargs/index.d.ts"
+    ]
+  },
+  "version": "3.4.5"
+}
