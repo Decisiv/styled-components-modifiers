@@ -206,7 +206,7 @@ invalid modifier is used.
 ### Applying Modifiers
 
 Applying modifiers when rendering the component is as simple as providing a
-`modifiers` prop. The value of this prop can be one either a string, an array of
+`modifiers` prop. The value of this prop can be either a string or an array of
 strings. Each string value should correspond to keys in the modifier
 configuration object applied to the component.
 
