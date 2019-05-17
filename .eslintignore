@@ -1,0 +1,3 @@
+*.tsbuildinfo
+package.json
+.eslint*

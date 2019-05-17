@@ -27,6 +27,7 @@ by allowing you to use BEM-flavored conventions when building your components.
     - [Applying Modifiers](#applying-modifiers)
     - [Responsive Modifiers _(deprecated)_](#responsive-modifiers-deprecated)
     - [Alternative Prop Names](#alternative-prop-names)
+  - [Using with TypeScript](#using-with-typescript)
   - [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
   - [Contributing](#contributing)
   - [License](#license)
@@ -340,6 +341,47 @@ const Button = styled.button`
 ```
 
 The same can be done when you `applyResponsiveStyleModifiers` _(deprecated)_.
+
+## Using with TypeScript
+
+There is an incomplete type declaration in the `styled-components` type
+definitions that must be patched if you are building a project with TypeScript
+and using `applyStyleModifiers` inside a `css` util (which you should). Styled
+Components already
+[documents how to create a declarations file](https://www.styled-components.com/docs/api#typescript).
+Inside the `styled-components` module you create, add this new type definition:
+
+```typescript
+export interface BaseThemedCssFunction<T extends object> {
+  (
+    first:
+      | TemplateStringsArray
+      | CSSObject
+      | InterpolationFunction<ThemedStyledProps<{}, T>>,
+    ...interpolations:
+      | SimpleInterpolation[]
+      | Interpolation<ThemedStyledProps<{}, T>>[]
+  ): FlattenSimpleInterpolation;
+  (
+    first:
+      | TemplateStringsArray
+      | CSSObject
+      | InterpolationFunction<ThemedStyledProps<{}, T>>,
+    ...interpolations:
+      | SimpleInterpolation[]
+      | Interpolation<ThemedStyledProps<{}, T>>[]
+  ): FlattenInterpolation<ThemedStyledProps<{}, T>>;
+  <P extends object>(
+    first:
+      | TemplateStringsArray
+      | CSSObject
+      | InterpolationFunction<ThemedStyledProps<P, T>>,
+    ...interpolations:
+      | SimpleInterpolation[]
+      | Interpolation<ThemedStyledProps<P, T>>[]
+  ): FlattenInterpolation<ThemedStyledProps<P, T>>;
+}
+```
 
 ## Built with Styled Components Modifiers
 

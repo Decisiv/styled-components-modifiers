@@ -42,9 +42,3 @@ type ComponentProps = Partial<{
   theme: DefaultTheme;
   [modifiersPropName: string]: ModifiersProp;
 }>;
-
-interface ApplyStyleModifiersProps {
-  modifiers: ModifierNames;
-  size: string;
-  theme: any;
-}

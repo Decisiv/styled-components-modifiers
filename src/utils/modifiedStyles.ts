@@ -1,5 +1,6 @@
 import isFunction from 'lodash.isfunction';
 import isObject from 'lodash.isobject';
+import { SimpleInterpolation } from 'styled-components';
 
 import normalizeModifiers from './normalizeModifiers';
 
@@ -8,7 +9,9 @@ import normalizeModifiers from './normalizeModifiers';
  * @param {*} val
  * @returns {val is ModifierObjValue}
  */
-function isModifierObjValue(val: any): val is ModifierObjValue {
+function isModifierObjValue(
+  val: any, // eslint-disable-line @typescript-eslint/no-explicit-any
+): val is ModifierObjValue {
   return isObject(val) && (val as ModifierObjValue).styles;
 }
 
@@ -24,9 +27,9 @@ export default function modifiedStyles(
   modifierKeys: ModifierKeys = [],
   modifierConfig: ModifiersConfig = {},
   componentProps: ComponentProps = {},
-) {
+): SimpleInterpolation {
   const stylesArr = normalizeModifiers(modifierKeys).reduce(
-    (acc: string[], modifierName: ModifierName) => {
+    (acc: string[], modifierName: ModifierName): string[] => {
       const modifierConfigValue = modifierConfig[modifierName];
       if (isFunction(modifierConfigValue)) {
         const config: ModifierConfigValue = modifierConfigValue(componentProps);
@@ -34,8 +37,8 @@ export default function modifiedStyles(
           ? config.styles
           : config;
         return Array.isArray(styles)
-          ? (acc as string[]).concat(styles.join(''))
-          : (acc as string[]).concat(styles);
+          ? acc.concat(styles.join(''))
+          : acc.concat(styles);
       }
       return acc;
     },

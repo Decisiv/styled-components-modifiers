@@ -3,6 +3,8 @@
  * `styleModifierPropTypes`. This should be removed before the v2 release.
  */
 
+import { InterpolationFunction, SimpleInterpolation } from 'styled-components';
+
 import { DEFAULT_MODIFIERS_KEY } from './constants';
 
 import isResponsiveModifiers from './utils/isResponsiveModifiers';
@@ -19,8 +21,8 @@ import modifiedStyles from './utils/modifiedStyles';
 export default function applyResponsiveStyleModifiers(
   modifiersConfig: ModifiersConfig,
   modifiersPropName: string = 'responsiveModifiers',
-) {
-  return (props: ComponentProps) => {
+): InterpolationFunction<ComponentProps> {
+  return (props: ComponentProps): SimpleInterpolation => {
     const { [modifiersPropName]: responsiveModifiers, ...otherProps } = props;
 
     if (isResponsiveModifiers(responsiveModifiers)) {
