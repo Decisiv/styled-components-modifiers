@@ -6,7 +6,6 @@ import normalizeModifiers from './normalizeModifiers';
 
 import {
   ComponentProps,
-  ModifierConfigValue,
   ModifierKeys,
   ModifierName,
   ModifierObjValue,
