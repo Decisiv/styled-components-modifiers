@@ -36,7 +36,7 @@
     "prettier": "prettier --write '**/*.{js*,ts*,md}'",
     "review": "npm run lint && npm test",
     "test": "jest",
-    "test:coverage:report": "opn coverage/lcov-report/index.html",
+    "test:coverage:report": "open-cli coverage/lcov-report/index.html",
     "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml src/**",
     "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
   },
@@ -108,6 +108,7 @@
     "collectCoverageFrom": [
       "!lib/**",
       "!src/index.ts",
+      "!src/types.ts",
       "src/**"
     ],
     "coverageThreshold": {

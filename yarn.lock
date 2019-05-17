@@ -4326,7 +4326,7 @@ open@^6.3.0:
 
 opn-cli@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.npmjs.org/opn-cli/-/opn-cli-5.0.0.tgz#e576fca5991333465d092a05ddfe8bf796c1bd0c"
+  resolved "https://registry.yarnpkg.com/opn-cli/-/opn-cli-5.0.0.tgz#e576fca5991333465d092a05ddfe8bf796c1bd0c"
   integrity sha512-+KGOnL1M9C9BbgLh6KvbSshAmOZqJtblq5w/1tpNRswCJchn9kmD4ZgQLj6mVMr7DzLpE8M/kRrvGoIYYca4sg==
   dependencies:
     file-type "^11.0.0"

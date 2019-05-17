@@ -37,24 +37,20 @@ export default function modifiedStyles(
   componentProps: ComponentProps,
 ): SimpleInterpolation {
   const stylesArr = normalizeModifiers(modifierKeys).reduce(
-    (acc: string[], modifierName: ModifierName): string[] => {
-      const modifierConfigValue: ModifierConfigValue =
-        modifierConfig[modifierName];
+    (
+      acc: SimpleInterpolation[],
+      modifierName: ModifierName,
+    ): SimpleInterpolation[] => {
+      const modifierConfigValue = modifierConfig[modifierName];
 
       if (isFunction(modifierConfigValue)) {
         const config = modifierConfigValue(componentProps);
 
-        if (!config) {
-          return acc;
-        }
-
-        const styles = isModifierObjValue(config)
-          ? (config as ModifierObjValue).styles
-          : config;
+        const styles = isModifierObjValue(config) ? config.styles : config;
 
         return Array.isArray(styles)
-          ? acc.concat(styles.join(''))
-          : acc.concat(`${styles}`);
+          ? acc.concat((styles as SimpleInterpolation[]).join(''))
+          : acc.concat(styles);
       }
 
       return acc;
