@@ -4,15 +4,23 @@ import { SimpleInterpolation } from 'styled-components';
 
 import normalizeModifiers from './normalizeModifiers';
 
+import {
+  ComponentProps,
+  ModifierConfigValue,
+  ModifierKeys,
+  ModifierName,
+  ModifierObjValue,
+  ModifiersConfig,
+} from '../types';
+
 /**
  * Evaluates if the first argument is of the ModifierObjValue type
  * @param {*} val
  * @returns {val is ModifierObjValue}
  */
-function isModifierObjValue(
-  val: any, // eslint-disable-line @typescript-eslint/no-explicit-any
-): val is ModifierObjValue {
-  return isObject(val) && (val as ModifierObjValue).styles;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isModifierObjValue(val: any): val is ModifierObjValue {
+  return isObject(val) && !!(val as ModifierObjValue).styles;
 }
 
 /**
@@ -20,26 +28,35 @@ function isModifierObjValue(
  * @export
  * @param {ModifierKeys} [modifierKeys=[]]
  * @param {ModifiersConfig} [modifierConfig={}]
- * @param {ComponentProps} [componentProps={}]
- * @returns
+ * @param {ComponentProps} [componentProps]
+ * @returns {SimpleInterpolation}
  */
 export default function modifiedStyles(
   modifierKeys: ModifierKeys = [],
   modifierConfig: ModifiersConfig = {},
-  componentProps: ComponentProps = {},
+  componentProps: ComponentProps,
 ): SimpleInterpolation {
   const stylesArr = normalizeModifiers(modifierKeys).reduce(
     (acc: string[], modifierName: ModifierName): string[] => {
-      const modifierConfigValue = modifierConfig[modifierName];
+      const modifierConfigValue: ModifierConfigValue =
+        modifierConfig[modifierName];
+
       if (isFunction(modifierConfigValue)) {
-        const config: ModifierConfigValue = modifierConfigValue(componentProps);
-        const styles: string | string[] = isModifierObjValue(config)
-          ? config.styles
+        const config = modifierConfigValue(componentProps);
+
+        if (!config) {
+          return acc;
+        }
+
+        const styles = isModifierObjValue(config)
+          ? (config as ModifierObjValue).styles
           : config;
+
         return Array.isArray(styles)
           ? acc.concat(styles.join(''))
-          : acc.concat(styles);
+          : acc.concat(`${styles}`);
       }
+
       return acc;
     },
     [],

@@ -1,5 +1,7 @@
 import isObject from 'lodash.isobject';
 
+import { ResponsiveModifiers } from '../types';
+
 /**
  * Evaluates if the first argument is of the ResponsiveModifiers type
  * @export

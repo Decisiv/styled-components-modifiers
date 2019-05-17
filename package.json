@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "A library that enables BEM flavored modifiers to styled components",
   "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/*"
   ],
@@ -27,7 +27,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn build:types && yarn build:js",
-    "build:js": "babel lib -d lib src --extensions \".js,.ts\" --ignore *__tests__/ --copy-files",
+    "build:js": "babel -d lib src --extensions \".js,.ts\" --ignore \"**/__tests__\"",
     "build:types": "tsc --build --force",
     "build:watch": "concurrently \" yarn build:types -w\" \"yarn build:js -w\"",
     "build:clean": "rimraf ./lib",
@@ -37,7 +37,7 @@
     "review": "npm run lint && npm test",
     "test": "jest",
     "test:coverage:report": "opn coverage/lcov-report/index.html",
-    "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml lib/**",
+    "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml src/**",
     "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
   },
   "peerDependencies": {

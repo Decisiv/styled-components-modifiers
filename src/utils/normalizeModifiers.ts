@@ -1,3 +1,5 @@
+import { ModifierKeys, ModifierNames } from '../types';
+
 /**
  * Normalizes string modifier props to be an array.
  * @export

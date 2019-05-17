@@ -8,6 +8,14 @@ import { Validator } from 'prop-types';
 import normalizeModifiers from './utils/normalizeModifiers';
 import isResponsiveModifiers from './utils/isResponsiveModifiers';
 
+import {
+  ComponentProps,
+  ModifierKeys,
+  ModifiersConfig,
+  ModifiersProp,
+  ResponsiveModifiers,
+} from './types';
+
 /**
  * Returns an error if we have invalid modifiers or sizes with errors
  *
@@ -22,7 +30,7 @@ function generateError(
   componentName: string,
   invalidModifiers: string[],
   sizesWithErrors?: string[],
-) {
+): Error {
   const m = invalidModifiers.length > 1 ? 'modifiers' : 'modifier';
   const modifierList = invalidModifiers.join(', ');
   const k = sizesWithErrors && sizesWithErrors.length > 1 ? 'keys' : 'key';
@@ -44,7 +52,7 @@ function generateError(
 function getInvalidModifiers(
   modifierKeys: ModifierKeys,
   modifiersConfig: ModifiersConfig,
-) {
+): string[] {
   return difference(normalizeModifiers(modifierKeys), keys(modifiersConfig));
 }
 
@@ -62,7 +70,7 @@ function validateModifiers(
   componentName: string,
   modifierKeys: ModifierKeys,
   modifierConfig: ModifiersConfig,
-) {
+): Error | null {
   const invalidModifiers = getInvalidModifiers(modifierKeys, modifierConfig);
 
   if (invalidModifiers.length > 0) {
@@ -87,17 +95,21 @@ export function validateResponsiveModifiers(
   componentName: string,
   responsiveModifiers: ResponsiveModifiers,
   modifierConfig: ModifiersConfig,
-) {
-  const rawInvalidModifiers: Array<string[]> = [];
+): Error | null {
+  const rawInvalidModifiers: string[][] = [];
   const rawSizesWithErrors: string[] = [];
 
-  forIn(responsiveModifiers, (modifiers, size) => {
-    const invalidModifiers = getInvalidModifiers(modifiers, modifierConfig);
-    if (invalidModifiers.length > 0) {
-      rawInvalidModifiers.push(invalidModifiers);
-      rawSizesWithErrors.push(size);
-    }
-  });
+  forIn(
+    responsiveModifiers,
+    (modifiers, size): void => {
+      const invalidModifiers = getInvalidModifiers(modifiers, modifierConfig);
+
+      if (invalidModifiers.length > 0) {
+        rawInvalidModifiers.push(invalidModifiers);
+        rawSizesWithErrors.push(size);
+      }
+    },
+  );
 
   const invalidModifiers = uniq(flatten(rawInvalidModifiers));
   const sizesWithErrors = uniq(rawSizesWithErrors);
@@ -124,28 +136,29 @@ export function validateResponsiveModifiers(
 export default function styleModifierPropTypes(
   modifierConfig: ModifiersConfig,
 ): Validator<ModifierKeys> {
-  return (
-    props: ComponentProps,
+  const validator = (
+    props: ComponentProps & { [propName: string]: ModifiersProp },
     modifiersPropName: string,
     componentName: string,
-  ) => {
+  ): Error | null => {
     const modifiers = props[modifiersPropName];
 
-    /* eslint-disable indent */
-    // Prettier and ESLint have different ideas on how to indent this. Prettier wins.
-    return isResponsiveModifiers(modifiers)
-      ? validateResponsiveModifiers(
-          modifiersPropName,
-          componentName,
-          modifiers,
-          modifierConfig,
-        )
-      : validateModifiers(
-          modifiersPropName,
-          componentName,
-          modifiers as ModifierKeys,
-          modifierConfig,
-        );
-    /* eslint-enable indent */
+    if (isResponsiveModifiers(modifiers)) {
+      return validateResponsiveModifiers(
+        modifiersPropName,
+        componentName,
+        modifiers,
+        modifierConfig,
+      );
+    }
+
+    return validateModifiers(
+      modifiersPropName,
+      componentName,
+      modifiers as ModifierKeys,
+      modifierConfig,
+    );
   };
+
+  return validator as Validator<ModifierKeys>;
 }

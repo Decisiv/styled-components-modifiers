@@ -209,29 +209,33 @@
         "version": "288bd8810361e76f2d7a6fff8ae9906c263ef9bab12df6bf633954526c71be7f",
         "signature": "288bd8810361e76f2d7a6fff8ae9906c263ef9bab12df6bf633954526c71be7f"
       },
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts": {
+        "version": "8e47d296302dd53338670a6391a6225585b2f20d1deea232d92a44d6edf69880",
+        "signature": "3c71d5be1919ee081bf6144e784260ebab1f9efb0f7e6a7474c702106d5b4981"
+      },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts": {
-        "version": "5e6abe6bb8f4d547bcc1d4862f5af7c2067d258c2512cd844dd765bce28efad9",
-        "signature": "64fa23fe06bcc246d2c7061fcfbe1f8b148d4946804baa1298eefbeabd518011"
+        "version": "945f3f0d3381c51289c0b47964d44c6fd0456c4b5f81ff5fa051927065045f08",
+        "signature": "738dfa0e375fd5613640fd51e9d6139bb8208f867bf243f7d3aa7a15ca4ee0e8"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts": {
         "version": "868ce5f4de7877e493f89b7308efdba22efa2f07c31ce2c9eb4a8aad44429e1c",
         "signature": "868ce5f4de7877e493f89b7308efdba22efa2f07c31ce2c9eb4a8aad44429e1c"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts": {
-        "version": "dedd1cd1195ffb6e51adc9c0c957c422f63fe7df08fbd2e904e92982dca4681b",
-        "signature": "484481b72127513dbc2e410956ce964d6f685530041a8231a2536fd28b5efded"
+        "version": "d05bd9ba4add2994b48c5a4b5b88a0b7658393996e394a26c0e4aa4574480d7f",
+        "signature": "c8840313a5cdb1c6c528f42a055f977d1280d004123b98a282c1eb99401fc18b"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts": {
-        "version": "54a2ed340316d19dbeff6e8ad8103fb837e2c39a44c529f27de63a0e4ab8c02d",
-        "signature": "28faae0f7188bf80eb1cf693f9b43981a6423e0d929131e9c03f5e789a638d09"
+        "version": "22be077bcab0b50396d990c2c82ec99f4bcca18f4a7bf9ddad394c85ec14018b",
+        "signature": "ecbe67a2ccc3310ae70cceda47dda60b6d6ecb79d6c285507048b89de637f72f"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applyresponsivestylemodifiers.ts": {
-        "version": "d74ba41e761ac861d5e09b9de0b886033b68bbaca2db910a93bc0196265fc15c",
-        "signature": "88bda9e35b6dc0ab1996024b4f93fe637639736049c0a03f2a6e510932dc3acc"
+        "version": "63dc67b6cfb4e7d3582feb6368f3aeb282212f9e2effeffcbafa2047d26d34db",
+        "signature": "c9b1c8d39af964fe683ff98b268c6688e5ad3ac7622ea10eb89291d659368cfc"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applystylemodifiers.ts": {
-        "version": "130f0521549b3d17f9770ac87709dc9b16a5a9c3147910e9d79161b5d485f93d",
-        "signature": "41524c2809bb248b4ab20db8845319676eb4a33fe477bb6387ac6190ad848de5"
+        "version": "24609ac267cb3ed6824471a318690596b838e14deaaa8877dacaa39d1bdcc024",
+        "signature": "041ce112c6800401c41e7275e92d92c661c29cf106536f72fd5ab5165121e77b"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts": {
         "version": "2e3eddea5ee7b2b48ab38903a9ed24a4cf5769f11ba49c202c1e02943fbd7ea3",
@@ -254,20 +258,16 @@
         "signature": "db500d1d75c48f7c52d0c1a32f3dcb51ce77cd4c126a3df4b192a5787a7c6925"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts": {
-        "version": "3eb6c806430ab4ab47b545e8eddb50c83c9a4c36c28823d32f46c31e4963ccbb",
-        "signature": "4a224a704085e86711f23541e22ebdcc5832b31d5794470c0a4b9717115681b2"
+        "version": "0f29b426a159da59aaa5496bdc9656d5fee6d070ecb6e51c410455edfc606068",
+        "signature": "0e46a4a592f999a0920a21a4e08cd6a446cd5c5b051298bc6ec79523bfd1ab2b"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": {
-        "version": "7e54ff4b0f8ba53ef7156cb2bc8e4b6a4a23618e85b52da854e2273b7798b20b",
-        "signature": "f67af2d7cd75524d7918ce90f7d98d93a212b1d64367b16b9681b3705d2177fc"
+        "version": "3e785e40f8a793488e48947c16efbd479634d394fd090aee244b6048f91739c5",
+        "signature": "3979c1f2edd6799a889c922e5d54f6b3bc9b7ca083cda006c3046b838baffe86"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/index.ts": {
-        "version": "1b5edb0a82e04cd45468d20b68a5b6ad8f3a01aae7a88bb817a966a194266702",
-        "signature": "a028026096f16c9355f26f03a6a4e1f9dc06a129c552b68954099c21844a3da8"
-      },
-      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/types/index.d.ts": {
-        "version": "43651c3aa77d38d1731a031002d54569a1627dcebd334cd45b80d4573afca394",
-        "signature": "43651c3aa77d38d1731a031002d54569a1627dcebd334cd45b80d4573afca394"
+        "version": "b5601cc4fb20da0488f6c308008b56994afdf4ea4edf3776406b181f959b553b",
+        "signature": "d47b0cd4b0c89386d8b969224ef3a1075259a89c0b9cf79607a7cb39442570ca"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts": {
         "version": "9eac0dd4de5669db2b8321dffa400b997f7b21181118efc7a2c1743d93d4be57",
@@ -567,29 +567,39 @@
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
       ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts"
+      ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts": [
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applyresponsivestylemodifiers.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/constants.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applystylemodifiers.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/constants.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.difference/index.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts"
@@ -614,18 +624,21 @@
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.uniq/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/index.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applyresponsivestylemodifiers.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applystylemodifiers.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts"
@@ -684,19 +697,40 @@
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/react/index.d.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applystylemodifiers.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/index.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applyresponsivestylemodifiers.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applystylemodifiers.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts",
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts"
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/applyresponsivestylemodifiers.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/modifiedstyles.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/styled-components/index.d.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
+      ],
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts": [
+        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/react/index.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/csstype/index.d.ts",
@@ -713,12 +747,6 @@
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/react-native/legacy-properties.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/react-native/index.d.ts"
-      ],
-      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts": [
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
-      ],
-      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts": [
-        "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/prop-types/index.d.ts"
       ],
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
         "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
@@ -1016,6 +1044,7 @@
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash/ts3.1/index.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isobject/index.d.ts",
+      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiers.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/lodash.isfunction/index.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/normalizemodifiers.ts",
@@ -1030,7 +1059,6 @@
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/stylemodifierproptypes.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/responsivestylemodifierproptypes.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/index.ts",
-      "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/types/index.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@babel/types/lib/index.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/babel__generator/index.d.ts",
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/node_modules/@types/babel__traverse/index.d.ts",

@@ -25,7 +25,7 @@ module.exports = (api) => {
            */ modules: isTest ? 'commonjs' : false,
         },
       ],
-      // Enabling Babel to understand TypeSFcript
+      // Enabling Babel to understand TypeScript
       '@babel/preset-typescript',
     ],
   };

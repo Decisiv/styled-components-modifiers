@@ -1,3 +1,4 @@
 *.tsbuildinfo
-package.json
 .eslint*
+package.json
+tsconfig.json
