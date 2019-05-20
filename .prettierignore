@@ -1,0 +1,6 @@
+**-lock.json
+*.tsbuildinfo
+coverage
+lib/**
+node_modules
+tmp

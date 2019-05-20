@@ -1,7 +1,10 @@
+import { InterpolationFunction, SimpleInterpolation } from 'styled-components';
+
 import { DEFAULT_MODIFIERS_KEY } from './constants';
 
 import isResponsiveModifiers from './utils/isResponsiveModifiers';
 import modifiedStyles from './utils/modifiedStyles';
+import { ComponentProps, ModifiersConfig, ModifiersProp } from './types';
 
 /**
  * Returns a function that evaluates a modifiersConfig object against a component's props.
@@ -14,18 +17,23 @@ import modifiedStyles from './utils/modifiedStyles';
 export default function applyStyleModifiers(
   modifiersConfig: ModifiersConfig,
   modifiersPropName: string = 'modifiers',
-) {
-  return (props: ComponentProps) => {
-    const { [modifiersPropName]: modifiers, ...otherProps } = props;
+): InterpolationFunction<ComponentProps> {
+  return (
+    props: ComponentProps & {
+      size: string;
+      [modifiersPropName: string]: ModifiersProp;
+    },
+  ): SimpleInterpolation => {
+    const modifiers = props[modifiersPropName];
 
     if (isResponsiveModifiers(modifiers)) {
-      const activeModifiers =
-        modifiers &&
-        ((props.size && modifiers[props.size]) ||
-          modifiers[DEFAULT_MODIFIERS_KEY]);
-      return modifiedStyles(activeModifiers, modifiersConfig, otherProps);
+      return modifiedStyles(
+        modifiers[props.size || DEFAULT_MODIFIERS_KEY],
+        modifiersConfig,
+        props,
+      );
     }
 
-    return modifiedStyles(modifiers, modifiersConfig, otherProps);
+    return modifiedStyles(modifiers, modifiersConfig, props);
   };
 }

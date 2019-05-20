@@ -1,3 +1,5 @@
+import { ModifierKeys, ModifierNames } from '../types';
+
 /**
  * Normalizes string modifier props to be an array.
  * @export
@@ -8,6 +10,6 @@ export default function normalizeModifiers(
   modifierKeys: ModifierKeys,
 ): ModifierNames {
   return (Array.isArray(modifierKeys) ? modifierKeys : [modifierKeys]).filter(
-    (i) => typeof i === 'string' && !!i,
+    (i): boolean => typeof i === 'string' && !!i,
   );
 }

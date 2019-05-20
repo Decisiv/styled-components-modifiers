@@ -1,15 +1,25 @@
 import isFunction from 'lodash.isfunction';
 import isObject from 'lodash.isobject';
+import { SimpleInterpolation } from 'styled-components';
 
 import normalizeModifiers from './normalizeModifiers';
+
+import {
+  ComponentProps,
+  ModifierKeys,
+  ModifierName,
+  ModifierObjValue,
+  ModifiersConfig,
+} from '../types';
 
 /**
  * Evaluates if the first argument is of the ModifierObjValue type
  * @param {*} val
  * @returns {val is ModifierObjValue}
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isModifierObjValue(val: any): val is ModifierObjValue {
-  return isObject(val) && (val as ModifierObjValue).styles;
+  return isObject(val) && !!(val as ModifierObjValue).styles;
 }
 
 /**
@@ -17,26 +27,31 @@ function isModifierObjValue(val: any): val is ModifierObjValue {
  * @export
  * @param {ModifierKeys} [modifierKeys=[]]
  * @param {ModifiersConfig} [modifierConfig={}]
- * @param {ComponentProps} [componentProps={}]
- * @returns
+ * @param {ComponentProps} [componentProps]
+ * @returns {SimpleInterpolation}
  */
 export default function modifiedStyles(
   modifierKeys: ModifierKeys = [],
   modifierConfig: ModifiersConfig = {},
-  componentProps: ComponentProps = {},
-) {
+  componentProps: ComponentProps,
+): SimpleInterpolation {
   const stylesArr = normalizeModifiers(modifierKeys).reduce(
-    (acc: string[], modifierName: ModifierName) => {
+    (
+      acc: SimpleInterpolation[],
+      modifierName: ModifierName,
+    ): SimpleInterpolation[] => {
       const modifierConfigValue = modifierConfig[modifierName];
+
       if (isFunction(modifierConfigValue)) {
-        const config: ModifierConfigValue = modifierConfigValue(componentProps);
-        const styles: string | string[] = isModifierObjValue(config)
-          ? config.styles
-          : config;
+        const config = modifierConfigValue(componentProps);
+
+        const styles = isModifierObjValue(config) ? config.styles : config;
+
         return Array.isArray(styles)
-          ? (acc as string[]).concat(styles.join(''))
-          : (acc as string[]).concat(styles);
+          ? acc.concat((styles as SimpleInterpolation[]).join(''))
+          : acc.concat(styles);
       }
+
       return acc;
     },
     [],

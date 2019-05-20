@@ -17,6 +17,5 @@
     "strict": true,
     "target": "es5",
     "watch": true
-  },
-  "include": ["src", "types"]
+  }
 }
