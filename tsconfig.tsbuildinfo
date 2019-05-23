@@ -210,8 +210,8 @@
         "signature": "288bd8810361e76f2d7a6fff8ae9906c263ef9bab12df6bf633954526c71be7f"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/types.ts": {
-        "version": "08f97c2af065124f6666bcae6f602d55fb2c8b879af43daf7b3d6ea468a38f2b",
-        "signature": "6c0e91976a141fa7f09448a69634a634e24bcf9cdd43d28d4a1ccbe4d516f4fc"
+        "version": "a66766ea6b3da36bae71409c12a92d97e44879621f9334c9545d264272e840ea",
+        "signature": "932d6a151ff1a12cf39f8049633ff31e5a74e4b4e41d2d0bc3d72064a55ce297"
       },
       "/users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/src/utils/isresponsivemodifiersprop.ts": {
         "version": "05101ad604de00e77297d04cfbdbc9f1b4aa908db7e214016e9bfa087d2f5923",
@@ -370,7 +370,6 @@
       "sourceMap": true,
       "strict": true,
       "target": 1,
-      "watch": true,
       "configFilePath": "/Users/andrewpoe/decisiv-ui-dev/packages/styled-components-modifiers/tsconfig.json"
     },
     "referencedMap": {
