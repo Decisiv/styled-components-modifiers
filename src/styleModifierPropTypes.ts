@@ -6,14 +6,14 @@ import uniq from 'lodash.uniq';
 import { Validator } from 'prop-types';
 
 import normalizeModifiers from './utils/normalizeModifiers';
-import isResponsiveModifiers from './utils/isResponsiveModifiers';
+import isResponsiveModifiersProp from './utils/isResponsiveModifiersProp';
 
 import {
   ComponentProps,
   ModifierKeys,
   ModifiersConfig,
   ModifiersProp,
-  ResponsiveModifiers,
+  ResponsiveModifiersProp,
 } from './types';
 
 /**
@@ -86,14 +86,14 @@ function validateModifiers(
  * @export
  * @param {string} modifiersPropName
  * @param {string} componentName
- * @param {ResponsiveModifiers} responsiveModifiers
+ * @param {ResponsiveModifiersProp} responsiveModifiers
  * @param {ModifiersConfig} modifierConfig
  * @returns {Error|Null}
  */
 export function validateResponsiveModifiers(
   modifiersPropName: string,
   componentName: string,
-  responsiveModifiers: ResponsiveModifiers,
+  responsiveModifiers: ResponsiveModifiersProp<ModifiersConfig>,
   modifierConfig: ModifiersConfig,
 ): Error | null {
   const rawInvalidModifiers: string[][] = [];
@@ -102,7 +102,10 @@ export function validateResponsiveModifiers(
   forIn(
     responsiveModifiers,
     (modifiers, size): void => {
-      const invalidModifiers = getInvalidModifiers(modifiers, modifierConfig);
+      const invalidModifiers = getInvalidModifiers(
+        modifiers as ModifierKeys,
+        modifierConfig,
+      );
 
       if (invalidModifiers.length > 0) {
         rawInvalidModifiers.push(invalidModifiers);
@@ -137,13 +140,15 @@ export default function styleModifierPropTypes(
   modifierConfig: ModifiersConfig,
 ): Validator<ModifierKeys> {
   const validator = (
-    props: ComponentProps & { [propName: string]: ModifiersProp },
+    props: ComponentProps & {
+      [propName: string]: ModifiersProp<ModifiersConfig>;
+    },
     modifiersPropName: string,
     componentName: string,
   ): Error | null => {
     const modifiers = props[modifiersPropName];
 
-    if (isResponsiveModifiers(modifiers)) {
+    if (isResponsiveModifiersProp(modifiers)) {
       return validateResponsiveModifiers(
         modifiersPropName,
         componentName,

@@ -5,7 +5,7 @@
 
 import { Validator } from 'prop-types';
 
-import isResponsiveModifiers from './utils/isResponsiveModifiers';
+import isResponsiveModifiersProp from './utils/isResponsiveModifiersProp';
 import { validateResponsiveModifiers } from './styleModifierPropTypes';
 import {
   ComponentProps,
@@ -25,13 +25,15 @@ export default function responsiveStyleModifierPropTypes(
   modifierConfig: ModifiersConfig,
 ): Validator<ModifierKeys> {
   const validator = (
-    props: ComponentProps & { [propName: string]: ModifiersProp },
+    props: ComponentProps & {
+      [propName: string]: ModifiersProp<ModifiersConfig>;
+    },
     propName: string,
     componentName: string,
   ): Error | null => {
     const responsiveModifiers = props[propName];
 
-    if (isResponsiveModifiers(responsiveModifiers)) {
+    if (isResponsiveModifiersProp(responsiveModifiers)) {
       return validateResponsiveModifiers(
         propName,
         componentName,

@@ -9,17 +9,26 @@ export type ModifierNames = ModifierName[];
  */
 export type ModifierKeys = ModifierNames | ModifierName;
 
-/**
- * An object where the keys are breakpoint sizes and the values are valid ModifierKeys.
- */
-export interface ResponsiveModifiers {
-  [key: string]: ModifierKeys;
-}
+// /**
+//  * An object where the keys are breakpoint sizes and the values are valid ModifierKeys.
+//  */
+// export interface ResponsiveModifiers {
+//   [key: string]: ModifierKeys;
+// }
 
-/**
- * The prop passed to the component when it is rendered.
- */
-export type ModifiersProp = ResponsiveModifiers | ModifierKeys;
+// /**
+//  * The prop passed to the component when it is rendered.
+//  */
+// export type ModifiersProp = ResponsiveModifiers | ModifierKeys;
+
+export type ResponsiveModifiersProp<MC, S extends object = {}> = {
+  _?: keyof MC | (keyof MC)[];
+} & { [key in keyof S]?: keyof MC | (keyof MC)[] };
+
+export type ModifiersProp<MC, S extends object = {}> =
+  | keyof MC
+  | (keyof MC)[]
+  | ResponsiveModifiersProp<MC, S>;
 
 export interface ModifierObjValue {
   styles: SimpleInterpolation;
