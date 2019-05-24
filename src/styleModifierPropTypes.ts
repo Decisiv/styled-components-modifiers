@@ -93,7 +93,7 @@ function validateModifiers(
 export function validateResponsiveModifiers(
   modifiersPropName: string,
   componentName: string,
-  responsiveModifiers: ResponsiveModifiersProp<ModifiersConfig>,
+  responsiveModifiers: ResponsiveModifiersProp<ModifiersConfig, {}>,
   modifierConfig: ModifiersConfig,
 ): Error | null {
   const rawInvalidModifiers: string[][] = [];

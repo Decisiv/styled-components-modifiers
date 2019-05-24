@@ -5,7 +5,7 @@
 dist
 lib
 reports
-
+*.tsbuildinfo
 ### Standard .gitignore stuff... ###
 # Created by https://www.gitignore.io/api/osx,git,node,linux,windows
 

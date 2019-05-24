@@ -13,7 +13,7 @@ follow it in all your interactions with the project.
   `git checkout -b my-new-feature`
 - Make your changes (including updates/additions to tests) and commit: `git add`
   and `git commit`
-- Make sure that the tests still pass: `npm run review`
+- Make sure that the tests still pass: `yarn run review`
 - Push your branch: `git push -u origin my-new-feature`
 - [Submit a pull request](https://github.com/Decisiv/styled-components-modifiers/compare)
   to the upstream `styled-components-modifiers` repository.

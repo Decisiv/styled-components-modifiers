@@ -12,7 +12,7 @@ export type ModifierKeys = ModifierNames | ModifierName;
 /**
  * An object where the keys are breakpoint sizes and the values are valid ModifierKeys.
  */
-export type ResponsiveModifiersProp<MC, S extends object = {}> = {
+export type ResponsiveModifiersProp<MC, S> = {
   _?: keyof MC | (keyof MC)[];
 } & { [key in keyof S]?: keyof MC | (keyof MC)[] };
 
