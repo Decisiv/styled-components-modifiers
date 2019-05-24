@@ -25,7 +25,7 @@ by allowing you to use BEM-flavored conventions when building your components.
     - [Defining Modifiers](#defining-modifiers)
     - [Validating Modifiers](#validating-modifiers)
     - [Applying Modifiers](#applying-modifiers)
-    - [Responsive Modifiers](#responsive-modifiers)
+    - [Responsive Modifiers _(deprecated)_](#responsive-modifiers-deprecated)
     - [Alternative Prop Names](#alternative-prop-names)
   - [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
   - [Contributing](#contributing)
@@ -79,10 +79,10 @@ or as a single string like this:
 <Button modifiers="success">...</Button>
 ```
 
-The modifiers are passed in as an array of flags or a single flag.
-Each flag changes the appearance of the Block or Element component.
-When passing in an array, the values are filtered and only strings are used,
-which means that it is safe to do the following:
+The modifiers are passed in as an array of flags or a single flag. Each flag
+changes the appearance of the Block or Element component. When passing in an
+array, the values are filtered and only strings are used, which means that it is
+safe to do the following:
 
 ```jsx
 <Button modifiers={['large', isLoading && 'loading']}>...</Button>
@@ -170,6 +170,9 @@ const Button = styled.button`
 
   // Then apply the modifier configuration.
   ${applyStyleModifiers(MODIFIER_CONFIG)};
+
+  // You can apply as many modifier configurations as you like, but remember that
+  // the last modifiers applied take priority in the event of colliding styles.
 `;
 
 export default Button;
@@ -203,25 +206,62 @@ invalid modifier is used.
 ### Applying Modifiers
 
 Applying modifiers when rendering the component is as simple as providing a
-`modifiers` prop. The prop should be an array of strings that correspond to keys
-in the modifier configuration object applied to the component.
+`modifiers` prop. The value of this prop can be either a string or an array of
+strings. Each string value should correspond to keys in the modifier
+configuration object applied to the component.
 
 ```jsx
 function Form() {
   return (
     <div>
       {/* ...the rest of form goes here... */}
-      {/* Render a button, and give it a `modifiers` prop with the desired modifiers. */}
+      {/* Render a button, and give it a `modifiers` prop with the desired modifier. */}
       <Button modifiers="success" />
+
+      {/* This is also perfectly valid, and will result in "stacked" modifiers. */}
+      <Button modifiers={['success', 'large']} />
     </div>
   );
 }
 ```
 
-In the example above, our button will have the `styles` from the `success`
-modifier applied.
+You can also apply the modifiers to be responsive. For this, the value of the
+`modifiers` prop should be an object where each value is either a string or
+array of strings that match a modifier name. Which set of modifiers is chosen
+will be based on the value of a `size` prop that you must also provide to the
+component.
 
-### Responsive Modifiers
+```jsx
+<Button
+  modifiers={{
+    small: 'disabled', // <-- will be applied when `getTheSizeFromSomewhere()` returns 'small'
+    medium: ['success', 'large'],
+  }}
+  size={getTheSizeFromSomewhere()}
+/>
+```
+
+**Note:**
+
+If you apply modifiers using the responsive technique and the value of `size`
+doesn't match a key in the object, the value of `_` will be applied by default.
+This is useful for applying special modifiers only on a single size.
+
+```jsx
+<Button
+  modifiers={{
+    _: 'disabled', // <-- will be applied for all size values _except_ 'medium'.
+    medium: ['success', 'large'], // <-- will only be applied if the value of `size` is 'medium'.
+  }}
+  size={getTheSizeFromSomewhere()}
+/>
+```
+
+### Responsive Modifiers _(deprecated)_
+
+> This approach to responsive modifiers is deprecated and will be removed in the
+> 2.0 release. The same functionality has been added to the normal `modifiers`
+> utilities.
 
 When designing components that are intended to be responsive, you may find it
 useful to apply different styles based on a `size` prop as shown below.
@@ -299,7 +339,7 @@ const Button = styled.button`
 `;
 ```
 
-The same can be done when you `applyResponsiveStyleModifiers`.
+The same can be done when you `applyResponsiveStyleModifiers` _(deprecated)_.
 
 ## Built with Styled Components Modifiers
 
