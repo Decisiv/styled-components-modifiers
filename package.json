@@ -2,7 +2,11 @@
   "name": "styled-components-modifiers",
   "version": "1.2.1",
   "description": "A library that enables BEM flavored modifiers to styled components",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Decisiv/styled-components-modifiers.git"
@@ -22,14 +26,18 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "babel lib -d dist --ignore *__tests__/",
-    "build:clean": "rimraf ./dist",
-    "lint": "eslint lib/**; exit 0",
+    "build": "yarn build:types && yarn build:js",
+    "build:js": "babel -d lib src --extensions \".js,.ts\" --ignore \"**/__tests__\"",
+    "build:types": "tsc --build --force",
+    "build:watch": "concurrently \" yarn build:types -w\" \"yarn build:js -w\"",
+    "build:clean": "rimraf ./lib",
+    "lint": "eslint src/**/*.{js*,ts*}",
     "prebuild": "npm run build:clean && npm run lint && npm run test",
+    "prettier": "prettier --write '**/*.{js*,ts*,md}'",
     "review": "npm run lint && npm test",
     "test": "jest",
-    "test:coverage:report": "opn coverage/lcov-report/index.html",
-    "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml lib/**",
+    "test:coverage:report": "open-cli coverage/lcov-report/index.html",
+    "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml src/**",
     "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
   },
   "peerDependencies": {
@@ -37,11 +45,12 @@
     "styled-components": "^2 | ^3 | ^4"
   },
   "dependencies": {
+    "@types/prop-types": "^15.7.1",
+    "@types/styled-components": "^4.1.15",
     "lodash.curry": "^4.1.1",
     "lodash.difference": "^4.5.0",
     "lodash.flatten": "^4.4.0",
     "lodash.forin": "^4.4.0",
-    "lodash.isarray": "^4.0.0",
     "lodash.iserror": "^3.1.1",
     "lodash.isfunction": "^3.0.8",
     "lodash.isobject": "^3.0.2",
@@ -49,28 +58,58 @@
     "lodash.uniq": "^4.5.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^8.0.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-0": "^6.24.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/lodash.curry": "^4.1.6",
+    "@types/lodash.difference": "^4.5.6",
+    "@types/lodash.flatten": "^4.4.6",
+    "@types/lodash.forin": "^4.4.6",
+    "@types/lodash.isarray": "^4.0.6",
+    "@types/lodash.iserror": "^3.1.6",
+    "@types/lodash.isfunction": "^3.0.6",
+    "@types/lodash.isobject": "^3.0.6",
+    "@types/lodash.keys": "^4.2.6",
+    "@types/lodash.uniq": "^4.5.6",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "concurrently": "^4.1.0",
     "cross-env": "^5.0.5",
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0",
-    "jest": "^21.2.1",
-    "jest-junit": "^3.1.0",
-    "opn-cli": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^1.3.1",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "lint-staged": "^8.1.7",
+    "opn-cli": "^5.0.0",
+    "prettier": "^1.17.1",
     "prop-types": "^15.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "rimraf": "^2.6.2",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "typescript": "^3.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "lib/**",
-      "!lib/index.js"
+      "!lib/**",
+      "!src/index.ts",
+      "!src/types.ts",
+      "src/**"
     ],
     "coverageThreshold": {
       "global": {
@@ -80,5 +119,15 @@
         "statements": 90
       }
     }
+  },
+  "lint-staged": {
+    "*.{js*,ts*}": [
+      "yarn run lint",
+      "git add"
+    ],
+    "*.{js*,ts*,md}": [
+      "yarn run prettier",
+      "git add"
+    ]
   }
 }

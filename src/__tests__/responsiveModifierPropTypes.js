@@ -95,3 +95,19 @@ test('responsiveStyleModifierPropTypes logs error with invalid modifier keys', (
   consoleSpy.mockReset();
   consoleSpy.mockRestore();
 });
+
+test('responsiveStyleModifierPropTypes returns null if non responsiveModifiers are provided', () => {
+  const nonResponsiveModifiers = {
+    test: () => ({ styles: 'display: relative;' }),
+    defaultTest: () => ({
+      styles: 'color: blue;',
+      defaultStyles: 'color: red;',
+    }),
+  };
+
+  const result = responsiveStyleModifierPropTypes(
+    defaultResponsiveModifierConfig,
+  )(nonResponsiveModifiers, 'prop', 'MyComponent');
+
+  expect(result).toEqual(null);
+});
