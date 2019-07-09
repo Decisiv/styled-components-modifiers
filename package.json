@@ -42,7 +42,7 @@
   },
   "peerDependencies": {
     "prop-types": "^15.4.0",
-    "styled-components": "^2 | ^3 | ^4"
+    "styled-components": "^2 || ^3 || ^4"
   },
   "dependencies": {
     "@types/prop-types": "^15.7.1",
