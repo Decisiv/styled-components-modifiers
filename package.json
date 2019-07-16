@@ -39,7 +39,7 @@
     "test": "jest",
     "test:coverage:report": "open-cli coverage/lcov-report/index.html",
     "lint:ci": "eslint --format junit -o reports/junit/js-lint-results.xml src/**",
-    "test:ci": "cross-env JEST_JUNIT_OUTPUT=reports/junit/js-test-results.xml jest --ci --testResultsProcessor='./node_modules/jest-junit'"
+    "test:ci": "jest --ci"
   },
   "peerDependencies": {
     "prop-types": "^15.4.0",
@@ -78,7 +78,6 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
     "concurrently": "^4.1.0",
-    "cross-env": "^5.0.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.2.0",
@@ -119,7 +118,16 @@
         "lines": 90,
         "statements": 90
       }
-    }
+    },
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "output": "reports/junit/js-test-results.xml"
+        }
+      ]
+    ]
   },
   "lint-staged": {
     "*.{js*,ts*}": [
