@@ -99,20 +99,17 @@ export function validateResponsiveModifiers(
   const rawInvalidModifiers: string[][] = [];
   const rawSizesWithErrors: string[] = [];
 
-  forIn(
-    responsiveModifiers,
-    (modifiers, size): void => {
-      const invalidModifiers = getInvalidModifiers(
-        modifiers as ModifierKeys,
-        modifierConfig,
-      );
+  forIn(responsiveModifiers, (modifiers, size): void => {
+    const invalidModifiers = getInvalidModifiers(
+      modifiers as ModifierKeys,
+      modifierConfig,
+    );
 
-      if (invalidModifiers.length > 0) {
-        rawInvalidModifiers.push(invalidModifiers);
-        rawSizesWithErrors.push(size);
-      }
-    },
-  );
+    if (invalidModifiers.length > 0) {
+      rawInvalidModifiers.push(invalidModifiers);
+      rawSizesWithErrors.push(size);
+    }
+  });
 
   const invalidModifiers = uniq(flatten(rawInvalidModifiers));
   const sizesWithErrors = uniq(rawSizesWithErrors);
