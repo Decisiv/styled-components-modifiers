@@ -1,8 +1,8 @@
-import difference from 'lodash.difference';
-import flatten from 'lodash.flatten';
-import forIn from 'lodash.forin';
-import keys from 'lodash.keys';
-import uniq from 'lodash.uniq';
+import difference from 'lodash/difference';
+import flatten from 'lodash/flatten';
+import forIn from 'lodash/forIn';
+import keys from 'lodash/keys';
+import uniq from 'lodash/uniq';
 import { Validator } from 'prop-types';
 
 import normalizeModifiers from './utils/normalizeModifiers';

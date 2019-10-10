@@ -1,4 +1,4 @@
-import isObject from 'lodash.isobject';
+import isObject from 'lodash/isObject';
 
 import { ResponsiveModifiersProp, ModifiersConfig } from '../types';
 
