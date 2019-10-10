@@ -1,6 +1,6 @@
 {
   "name": "styled-components-modifiers",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A library that enables BEM flavored modifiers to styled components",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
