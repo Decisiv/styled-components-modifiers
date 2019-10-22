@@ -58,7 +58,7 @@ test('responsiveStyleModifierPropTypes logs error with invalid modifier key', ()
       XS: ['1_per_row', 'wrongModifier'],
       SM: ['2_per_row'],
     },
-    size: 'MD',
+    size: 'XS',
   };
   PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
 
@@ -85,7 +85,7 @@ test('responsiveStyleModifierPropTypes logs error with invalid modifier keys', (
       XS: ['1_per_row', 'firstWrongModifier'],
       SM: ['2_per_row', 'secondWrongModifier'],
     },
-    size: 'MD',
+    size: 'XS',
   };
   PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
 
