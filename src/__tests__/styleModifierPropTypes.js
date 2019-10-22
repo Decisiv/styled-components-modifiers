@@ -106,6 +106,7 @@ test('styleModifierPropTypes does not log error with valid modifiers when respon
       _: ['1_per_row'],
       SM: ['2_per_row', '3_per_row'],
     },
+    size: 'SM',
   };
   PropTypes.checkPropTypes(testPropTypes, goodProps, 'prop', 'MyComponent');
 
@@ -126,6 +127,7 @@ test('styleModifierPropTypes logs error with invalid modifier key when responsiv
       XS: ['1_per_row', 'test'],
       SM: 'wrongModifier',
     },
+    size: 'MD',
   };
   PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
 
@@ -150,11 +152,36 @@ test('styleModifierPropTypes logs error with invalid modifier keys when responsi
       XS: ['1_per_row', 'firstWrongModifier'],
       SM: ['2_per_row', 'secondWrongModifier'],
     },
+    size: 'LG',
   };
   PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
 
   const expectedErrMsg =
     "Invalid modifiers firstWrongModifier, secondWrongModifier used in prop 'modifiers' (size keys XS, SM) and supplied to MyComponent. Validation failed.";
+  expect(consoleSpy).toHaveBeenCalled();
+  const errorMsg = consoleSpy.mock.calls[0][0];
+  expect(errorMsg).toContain(expectedErrMsg);
+
+  consoleSpy.mockReset();
+  consoleSpy.mockRestore();
+});
+
+test('styleModifierPropTypes logs error when no size prop is passed when using responsive modifiers', () => {
+  const consoleSpy = jest.spyOn(console, 'error').mockImplementation(noop);
+
+  const testPropTypes = {
+    modifiers: styleModifierPropTypes(defaultModifierConfig),
+  };
+  const badProps = {
+    modifiers: {
+      XS: ['1_per_row', 'test'],
+      SM: '2_per_row',
+    },
+  };
+  PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
+
+  const expectedErrMsg =
+    'Invalid Responsive Modifier; size prop must be included when using Responsive Modifiers.';
   expect(consoleSpy).toHaveBeenCalled();
   const errorMsg = consoleSpy.mock.calls[0][0];
   expect(errorMsg).toContain(expectedErrMsg);
