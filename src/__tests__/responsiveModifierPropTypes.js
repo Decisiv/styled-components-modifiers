@@ -132,10 +132,33 @@ test('responsiveStyleModifierPropTypes logs error when no size prop is passed wh
   PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
 
   const expectedErrMsg =
-    'Invalid Responsive Modifier; size prop must be included when using Responsive Modifiers.';
+    "Warning: Failed prop type: Invalid responsive prop supplied to MyComponent. Prop 'size' must be included when using responsive modifiers. Validation failed";
   expect(consoleSpy).toHaveBeenCalled();
   const errorMsg = consoleSpy.mock.calls[0][0];
   expect(errorMsg).toContain(expectedErrMsg);
+
+  consoleSpy.mockReset();
+  consoleSpy.mockRestore();
+});
+
+test('responsiveStyleModifierPropTypes will pass if any size prop is declared', () => {
+  const consoleSpy = jest.spyOn(console, 'error').mockImplementation(noop);
+
+  const testPropTypes = {
+    responsiveModifiers: responsiveStyleModifierPropTypes(
+      defaultResponsiveModifierConfig,
+    ),
+  };
+  const badProps = {
+    responsiveModifiers: {
+      XS: '1_per_row',
+      SM: '2_per_row',
+    },
+    size: undefined,
+  };
+  PropTypes.checkPropTypes(testPropTypes, badProps, 'prop', 'MyComponent');
+
+  expect(consoleSpy).not.toHaveBeenCalled();
 
   consoleSpy.mockReset();
   consoleSpy.mockRestore();

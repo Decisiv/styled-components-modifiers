@@ -88,7 +88,7 @@ function validateModifiers(
  * @param {string} componentName
  * @param {ResponsiveModifiersProp} responsiveModifiers
  * @param {ModifiersConfig} modifierConfig
- * @param {string} sizeProp
+ * @param {boolean} sizeProp
  * @returns {Error|Null}
  */
 export function validateResponsiveModifiers(
@@ -96,17 +96,17 @@ export function validateResponsiveModifiers(
   componentName: string,
   responsiveModifiers: ResponsiveModifiersProp<ModifiersConfig, {}>,
   modifierConfig: ModifiersConfig,
-  sizeProp: string,
+  sizeProp: boolean,
 ): Error | null {
   const rawInvalidModifiers: string[][] = [];
   const rawSizesWithErrors: string[] = [];
-  // eslint-disable-next-line
 
   if (!sizeProp) {
     return new Error(
-      'Invalid Responsive Modifier; size prop must be included when using Responsive Modifiers.',
+      `Invalid responsive prop supplied to ${componentName}. Prop 'size' must be included when using responsive modifiers. Validation failed`,
     );
   }
+
   forIn(responsiveModifiers, (modifiers, size): void => {
     const invalidModifiers = getInvalidModifiers(
       modifiers as ModifierKeys,
@@ -152,7 +152,7 @@ export default function styleModifierPropTypes(
     componentName: string,
   ): Error | null => {
     const modifiers = props[modifiersPropName];
-    const sizeProp = props.size;
+    const sizeProp = Object.hasOwnProperty.call(props, 'size');
 
     if (isResponsiveModifiersProp(modifiers)) {
       return validateResponsiveModifiers(
