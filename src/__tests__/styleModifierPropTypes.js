@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 import styleModifierPropTypes from '../styleModifierPropTypes';
-import responsiveStyleModifierPropTypes from '../responsiveStyleModifierPropTypes';
 
 const defaultModifierConfig = {
   test: () => ({ styles: 'display: relative;' }),
