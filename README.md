@@ -25,7 +25,6 @@ by allowing you to use BEM-flavored conventions when building your components.
     - [Defining Modifiers](#defining-modifiers)
     - [Validating Modifiers](#validating-modifiers)
     - [Applying Modifiers](#applying-modifiers)
-    - [Responsive Modifiers _(deprecated)_](#responsive-modifiers-deprecated)
     - [Alternative Prop Names](#alternative-prop-names)
   - [Built with Styled Components Modifiers](#built-with-styled-components-modifiers)
   - [Contributing](#contributing)
@@ -128,25 +127,24 @@ For our demo, let's first set up a modifier configuration object:
 const MODIFIER_CONFIG = {
   // The functions receive the props of the component as the only argument.
   // Here, we destructure the theme from the argument for use within the modifier styling.
-  disabled: ({ theme }) => `
+  disabled: ({ theme }) => css`
     // These styles are applied any time this modifier is used.
     background-color: ${theme.colors.chrome_400};
     color: ${theme.colors.chrome_100};
   `,
 
-  // Alternatively, you can return an object with your styles under the key `styles`.
-  success: ({ theme }) => ({
-    styles: `
-      background-color: ${theme.colors.success};
-    `,
-  }),
-
   // Styled Components exports a `css` util that enables some nice linting and interpolation
-  // features. You can use it directly or with the `styles` object pattern.
+  // features.
+  success: ({ theme }) => css`
+    background-color: ${theme.colors.success};
+  `,
+  ,
+
   warning: ({ theme }) => css`
     background-color: ${theme.colors.warning};
   `,
 
+  // You can also return a simple string with valid css.
   large: () => `
     height: 3em;
     width: 6em;
@@ -257,74 +255,6 @@ This is useful for applying special modifiers only on a single size.
 />
 ```
 
-### Responsive Modifiers _(deprecated)_
-
-> This approach to responsive modifiers is deprecated and will be removed in the
-> 2.0 release. The same functionality has been added to the normal `modifiers`
-> utilities.
-
-When designing components that are intended to be responsive, you may find it
-useful to apply different styles based on a `size` prop as shown below.
-
-```jsx
-import styled from 'styled-components';
-import {
-  applyResponsiveStyleModifiers,
-  applyStyleModifiers,
-  responsiveStyleModifierPropTypes,
-  styleModifierPropTypes,
-} from 'styled-components-modifiers';
-
-// Define the MODIFIER_CONFIG in exactly the same way as above. You would use the same
-// modifier configuration for responsive and non-responsive modifiers.
-
-const Button = styled.button`
-  // ...define your base styles here...
-
-  // Apply the modifier configuration:
-  ${applyStyleModifiers(MODIFIER_CONFIG)}
-
-  // Then apply the responsive modifiers.
-  // This must happen AFTER the normal modifiers have been applied.
-  ${applyResponsiveStyleModifiers(MODIFIER_CONFIG)}
-`;
-
-Button.propTypes = {
-  // Setup validation of the "normal" modifier flags:
-  modifiers: styleModifierPropTypes(MODIFIER_CONFIG),
-
-  // You can also validate the responsive modifier flags:
-  responsiveModifiers: responsiveStyleModifierPropTypes(MODIFIER_CONFIG),
-};
-
-export default Button;
-```
-
-Using responsive modifiers is a little bit different, though, but just as
-simple:
-
-```jsx
-<Button
-  responsiveModifiers={{
-    small: 'disabled',
-    medium: ['success', 'large'],
-  }}
-  size={getTheSizeFromSomewhere()}
-/>
-```
-
-It works by matching the `size` prop provided to the component with the keys of
-the `responsiveModifiers` prop, and then applying the appropriate modifier(s)
-based on the corresponding value in `responsiveModifiers`.
-
-So, for example, when `Button` receives a prop `size` with a value equal to
-`medium`, the modifiers `success` and `large` will be applied to the `Button`.
-If `size` does not match any key in the `responsiveModifiers`, _no_ additional
-modifiers will be applied. Your normal `modifiers` array will still work exactly
-the same.
-
-Tada! Responsive styling!
-
 ### Alternative Prop Names
 
 Finally, let’s say you want to apply multiple modifier arrays, or perhaps you
@@ -338,8 +268,6 @@ const Button = styled.button`
   ${applyStyleModifiers(MODIFIER_CONFIG, 'altPropName')}
 `;
 ```
-
-The same can be done when you `applyResponsiveStyleModifiers` _(deprecated)_.
 
 ## Built with Styled Components Modifiers
 

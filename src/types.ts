@@ -24,13 +24,9 @@ export type ModifiersProp<MC, S extends object = {}> =
   | (keyof MC)[]
   | ResponsiveModifiersProp<MC, S>;
 
-export interface ModifierObjValue {
-  styles: SimpleInterpolation;
-}
-
 export type ModifierConfigValue = (
   props: ComponentProps,
-) => SimpleInterpolation | ModifierObjValue;
+) => SimpleInterpolation;
 
 /**
  * An object declaring modifiers for use within a component.

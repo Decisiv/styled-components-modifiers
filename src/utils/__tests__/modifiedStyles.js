@@ -5,7 +5,6 @@ import modifiedStyles from '../modifiedStyles';
 const rebeccapurple = 'rebeccapurple';
 
 const defaultModifierConfig = {
-  objectTest: () => ({ styles: 'color: green;' }),
   styleString: () => 'color: blue;',
   themeTest: ({ theme }) => `background-color: ${theme.colors.text};`,
   cssUtilTest: () =>
@@ -22,13 +21,6 @@ const theme = {
 
 test('returns an empty string with no args', () => {
   expect(modifiedStyles()).toEqual('');
-});
-
-test('returns a string with styles when modifier given and config object supplied', () => {
-  const styles = modifiedStyles(['objectTest'], defaultModifierConfig, {
-    theme,
-  });
-  expect(styles).toContain('color: green');
 });
 
 test('returns a string with styles when modifier given and config string supplied', () => {
