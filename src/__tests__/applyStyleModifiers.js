@@ -3,9 +3,6 @@ import { css } from 'styled-components';
 import applyStyleModifiers from '../applyStyleModifiers';
 
 const defaultModifierConfig = {
-  // test: () => ({
-  //   styles: 'display: relative;',
-  // }),
   themeTest: ({ theme }) =>
     css`
       background-color: ${theme.colors.text};
@@ -21,13 +18,14 @@ const theme = {
 
 test('returns the expect styles based on modifier prop', () => {
   const props = {
-    modifiers: ['stringTest'],
+    modifiers: ['stringTest', 'themeTest'],
     theme,
   };
 
   const styles = applyStyleModifiers(defaultModifierConfig)(props);
 
-  expect(styles).toEqual('color: blue;');
+  expect(styles).toMatch('color: blue;');
+  expect(styles).toMatch('background-color: black;');
 });
 
 test('returns the expected styles when modifier interpolates from theme', () => {
