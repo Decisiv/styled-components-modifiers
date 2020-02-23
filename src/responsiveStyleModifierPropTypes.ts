@@ -32,6 +32,7 @@ export default function responsiveStyleModifierPropTypes(
     componentName: string,
   ): Error | null => {
     const responsiveModifiers = props[propName];
+    const sizeProp = props.size;
 
     if (isResponsiveModifiersProp(responsiveModifiers)) {
       return validateResponsiveModifiers(
@@ -39,6 +40,7 @@ export default function responsiveStyleModifierPropTypes(
         componentName,
         responsiveModifiers,
         modifierConfig,
+        sizeProp,
       );
     }
 
