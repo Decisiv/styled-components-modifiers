@@ -19,7 +19,7 @@ export type ResponsiveModifiersProp<MC, S> = {
 /**
  * The prop passed to the component when it is rendered.
  */
-export type ModifiersProp<MC, S extends object = {}> =
+export type ModifiersProp<MC, S extends object = { [key: string]: number }> =
   | keyof MC
   | (keyof MC)[]
   | ResponsiveModifiersProp<MC, S>;
