@@ -1,5 +1,4 @@
 import isFunction from 'lodash/isFunction';
-import isObject from 'lodash/isObject';
 import { SimpleInterpolation } from 'styled-components';
 
 import normalizeModifiers from './normalizeModifiers';
@@ -8,19 +7,8 @@ import {
   ComponentProps,
   ModifierKeys,
   ModifierName,
-  ModifierObjValue,
   ModifiersConfig,
 } from '../types';
-
-/**
- * Evaluates if the first argument is of the ModifierObjValue type
- * @param {*} val
- * @returns {val is ModifierObjValue}
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function isModifierObjValue(val: any): val is ModifierObjValue {
-  return isObject(val) && !!(val as ModifierObjValue).styles;
-}
 
 /**
  * Extracts and builds the required style string based on the provided values.
@@ -43,9 +31,7 @@ export default function modifiedStyles(
       const modifierConfigValue = modifierConfig[modifierName];
 
       if (isFunction(modifierConfigValue)) {
-        const config = modifierConfigValue(componentProps);
-
-        const styles = isModifierObjValue(config) ? config.styles : config;
+        const styles = modifierConfigValue(componentProps);
 
         return Array.isArray(styles)
           ? acc.concat((styles as SimpleInterpolation[]).join(''))
