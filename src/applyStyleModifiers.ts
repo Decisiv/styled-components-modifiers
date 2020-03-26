@@ -29,16 +29,19 @@ export default function applyStyleModifiers(
       [modifiersPropName: string]: ModifiersProp<ModifiersConfig>;
     },
   ): SimpleInterpolation => {
-    const modifiers = props[modifiersPropName];
+    const modifiers = props[modifiersPropName] as ModifiersProp<
+      ModifiersConfig // eslint-disable-line @typescript-eslint/indent
+    >;
 
     if (isResponsiveModifiersProp(modifiers)) {
       return modifiedStyles(
-        (modifiers as ModifierKeys)[props.size || DEFAULT_MODIFIERS_KEY],
+        (modifiers[props.size] ||
+          modifiers[DEFAULT_MODIFIERS_KEY]) as ModifierKeys,
         modifiersConfig,
         props,
       );
     }
 
-    return modifiedStyles(modifiers, modifiersConfig, props);
+    return modifiedStyles(modifiers as ModifierKeys, modifiersConfig, props);
   };
 }

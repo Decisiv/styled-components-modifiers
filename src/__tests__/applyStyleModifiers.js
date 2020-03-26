@@ -54,7 +54,7 @@ test('returns a style string with styles based on size prop', () => {
   expect(styles).not.toContain('display: relative;');
 });
 
-test('returns default modifiers if size prop does not match', () => {
+test('returns default modifiers if size prop is undefined', () => {
   const props = {
     modifiers: {
       _: ['test'],
@@ -67,5 +67,21 @@ test('returns default modifiers if size prop does not match', () => {
   const styles = applyStyleModifiers(defaultModifierConfig)(props);
 
   expect(styles).toContain('display: relative;');
+  expect(styles).not.toContain('background-color: black;');
+});
+
+test('returns default modifiers if size prop does not match', () => {
+  const props = {
+    modifiers: {
+      _: ['stringTest'],
+      XS: 'themeTest',
+    },
+    size: 'SM',
+    theme,
+  };
+
+  const styles = applyStyleModifiers(defaultModifierConfig)(props);
+
+  expect(styles).toContain('color: blue;');
   expect(styles).not.toContain('background-color: black;');
 });
