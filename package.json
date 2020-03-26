@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "prop-types": "^15.4.0",
-    "styled-components": "^2 || ^3 || ^4"
+    "styled-components": "^2 || ^3 || ^4 || ^5"
   },
   "dependencies": {
     "@types/prop-types": "^15.7.1",
@@ -78,7 +78,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "rimraf": "^2.6.2",
-    "styled-components": "^4.2.0",
+    "styled-components": "^5.0.0",
     "typescript": "^3.4.5"
   },
   "sideEffects": false,
