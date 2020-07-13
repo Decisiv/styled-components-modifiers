@@ -44,3 +44,10 @@ export interface ModifiersConfig {
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type ComponentProps = StyledProps<any>;
+
+/**
+* An interface to extend in order to type component props
+*/
+export interface WithModifiers {
+  modifiers?: ModifierKeys;
+}
