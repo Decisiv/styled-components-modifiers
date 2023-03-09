@@ -21,12 +21,12 @@ import {
  */
 export default function applyStyleModifiers(
   modifiersConfig: ModifiersConfig,
-  modifiersPropName: string = 'modifiers',
+  modifiersPropName = 'modifiers',
 ): InterpolationFunction<ComponentProps> {
   return (
     props: ComponentProps & {
       size: string;
-      [modifiersPropName: string]: ModifiersProp<ModifiersConfig>;
+      [modifiersPropName: string]: ModifiersProp<ModifiersConfig, object>;
     },
   ): SimpleInterpolation => {
     const modifiers = props[modifiersPropName];

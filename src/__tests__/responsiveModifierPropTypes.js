@@ -20,7 +20,7 @@ const defaultResponsiveModifierConfig = {
   }),
 };
 
-const noop = () => {};
+const noop = () => null;
 
 test('responsiveStyleModifierPropTypes does not log error with valid modifiers', () => {
   const consoleSpy = jest.spyOn(console, 'error').mockImplementation(noop);

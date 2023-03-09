@@ -22,7 +22,7 @@ const defaultModifierConfig = {
   }),
 };
 
-const noop = () => {};
+const noop = () => null;
 
 test('styleModifierPropTypes does not log error if modifier array is not present', () => {
   const consoleSpy = jest.spyOn(console, 'error').mockImplementation(noop);

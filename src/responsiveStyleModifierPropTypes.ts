@@ -26,7 +26,7 @@ export default function responsiveStyleModifierPropTypes(
 ): Validator<ModifierKeys> {
   const validator = (
     props: ComponentProps & {
-      [propName: string]: ModifiersProp<ModifiersConfig>;
+      [propName: string]: ModifiersProp<ModifiersConfig, object>;
     },
     propName: string,
     componentName: string,

@@ -138,7 +138,7 @@ export default function styleModifierPropTypes(
 ): Validator<ModifierKeys> {
   const validator = (
     props: ComponentProps & {
-      [propName: string]: ModifiersProp<ModifiersConfig>;
+      [propName: string]: ModifiersProp<ModifiersConfig, object>;
     },
     modifiersPropName: string,
     componentName: string,

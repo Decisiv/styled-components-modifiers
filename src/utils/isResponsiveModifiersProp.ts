@@ -10,6 +10,6 @@ import { ResponsiveModifiersProp, ModifiersConfig } from '../types';
  */
 export default function isResponsiveModifiersProp(
   val: any, // eslint-disable-line @typescript-eslint/no-explicit-any
-): val is ResponsiveModifiersProp<ModifiersConfig, {}> {
+): val is ResponsiveModifiersProp<ModifiersConfig, object> {
   return isObject(val) && !Array.isArray(val);
 }

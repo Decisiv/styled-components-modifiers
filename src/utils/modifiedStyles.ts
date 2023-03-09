@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 import isFunction from 'lodash/isFunction';
 import isObject from 'lodash/isObject';
 import { SimpleInterpolation } from 'styled-components';

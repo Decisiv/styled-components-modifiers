@@ -35,6 +35,16 @@ module.exports = {
     //    'error' or 2 - turn the rule on as an error (exit code is 1 when triggered)
     //-------------------------------------------------------------------------------------------
     'import/no-extraneous-dependencies': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'import/no-named-as-default': 0,
     'no-console': 1,
     'spaced-comment': [

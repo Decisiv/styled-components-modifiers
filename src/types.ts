@@ -12,14 +12,14 @@ export type ModifierKeys = ModifierNames | ModifierName;
 /**
  * An object where the keys are breakpoint sizes and the values are valid ModifierKeys.
  */
-export type ResponsiveModifiersProp<MC, S> = {
+export type ResponsiveModifiersProp<MC, S extends object> = {
   _?: keyof MC | (keyof MC)[];
 } & { [key in keyof S]?: keyof MC | (keyof MC)[] };
 
 /**
  * The prop passed to the component when it is rendered.
  */
-export type ModifiersProp<MC, S extends object = {}> =
+export type ModifiersProp<MC, S extends object> =
   | keyof MC
   | (keyof MC)[]
   | ResponsiveModifiersProp<MC, S>;
@@ -27,6 +27,12 @@ export type ModifiersProp<MC, S extends object = {}> =
 export interface ModifierObjValue {
   styles: SimpleInterpolation;
 }
+
+/**
+ * The component's props.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type ComponentProps = StyledProps<any>;
 
 export type ModifierConfigValue = (
   props: ComponentProps,
@@ -38,9 +44,3 @@ export type ModifierConfigValue = (
 export interface ModifiersConfig {
   [key: string]: ModifierConfigValue;
 }
-
-/**
- * The component's props.
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type ComponentProps = StyledProps<any>;

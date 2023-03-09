@@ -26,12 +26,12 @@ import {
  */
 export default function applyResponsiveStyleModifiers(
   modifiersConfig: ModifiersConfig,
-  modifiersPropName: string = 'responsiveModifiers',
+  modifiersPropName = 'responsiveModifiers',
 ): InterpolationFunction<ComponentProps> {
   return (
     props: ComponentProps & {
       size: string;
-      [modifiersPropName: string]: ModifiersProp<ModifiersConfig>;
+      [modifiersPropName: string]: ModifiersProp<ModifiersConfig, object>;
     },
   ): SimpleInterpolation => {
     const responsiveModifiers = props[modifiersPropName];
